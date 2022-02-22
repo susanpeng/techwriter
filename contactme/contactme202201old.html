@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contactme</title>
+		<link href="/styles/style.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+		<div id="wholepage">
+
+
+		<div id="header"></div>
+	<script>$("#header").load("../hf/header.html");</script>
+	<script>
+		$(document).ready(function(){
+			$('#contactme').addClass('selected');
+
+		});
+	</script>
+	<div id="middle">
+	<h1 class="center">Contact Me</h1>
+		<table id="contacttable">
+	<tr><td>
+		<p>If you have a project and need my help, please fill the following form:</p>
+
+
+	<section>
+    <form enctype="multipart/form-data" id="frmemail">
+        <fieldset class="margin-b" text-align="center">
+            <br>
+            <label for="form_name">Name:</label><br>
+						<input name="form_name" id="form_name" type="text" value="" size="45"  required autofocus>
+						<br>
+            <label for="form_email">Email:</label><br>
+						<input type="email" name="form_email" id="form_email" value="" size="45">
+						<br>
+            <label for="form_msg">Message:</label><br>
+						<textarea name="form_msg" id="form_msg" rows="7" cols="45"></textarea>
+        </fieldset>
+				<br><br>
+        <input type="submit" name="submit" id="submit" font-size="3" value="Submit">
+    </form>
+	</section>
+
+<script>
+	$(document).ready(function(){
+		$('#submit').on('click',function(){
+		var name = $('#form_name').val();
+		var email = $('#form_email').val();
+		var msg = $('#form_msg').val();
+		var datastring = 'name='+name+'&email='+email+'&msg='+msg;
+//			console.log(datastring);
+
+		$.ajax({
+  type: "POST",
+  url: "email-php.php",
+  data: datastring,
+  success: function(result){
+		console.log('success');
+		//	alert('success send');
+		//	alert(this.data+","+this.url+","+this.type);
+		},
+	   error: function(jqxhr,status,exception){
+			 console.log('Exception: ',exception);
+			// 			 			alert(this.data+","+this.url+","+this.type);
+			// alert('Exception:',exception);
+
+		}
+		});
+	});
+	});
+</script>
+		</td></tr></table>
+	</div>
+	<div id="footer"></div>
+	<script>
+		$("#footer").load("../hf/footer.html");
+		</script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aegisub User Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" text = "text/css" href = styles/style.css>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wholepage">
+ <div align="center"><img src="./images/banner.png" width="600" height="100" alt=""/></div>
+ 
+ <script>
+	$(document).ready(function(){
+	$('#work').addClass('selected');
+  });
+  </script>
+ 
+ <div class="middle">
+	<div id="sidenav"></div>
+	<script>$("#sidenav").load("sidebar.html");</script>
+	
+<div class="main">
+
+<H3>Working with Styles</H3>
+<hr>
+
+<p>When you work with typesetting, you are actually working with styles. A style is a set of parameters about how subtitle lines are displayed in a video. It is a style that decides the appearance of your subtitles in a video.</p>
+
+<p>In Aegisub, styles can be stored in the storage by groups. When you edit subtitles, you can use existing styles in the storage, or create your new styles.</p>
+
+<p>After you create a new style, you can save it to the storage for later use. If you are just trying a style to see if it is suitable for your subtitles, you can keep it in the Current scripts area. If you do not copy a new style from the Current script area to the storage, you lose the style when you close the Aegisub program. In the subtitles manager, you can move a style from storage to the Current script area and vice versa.</p>
+
+<p>The Styles Manager and the Style Editor are two built-in tools. You use the Styles Manager to manage styles. You use the Style Editor to edit an existing style or create a new style.</p>
+
+<p>Step 2 in the <A href="editingSubtitles.html">Editing Subtitles</A> shows you how to select an existing style for a current subtitle line.</p>
+<p>To learn how to use the Styles Manager, see <A href="stylesManager.html" xrefformat="See '{paratext}'">The Styles Manager</A>.</p>
+<p>To learn how to use the Style Editor, see <A href="styleEditor.html" xrefformat="See '{paratext}'"> The Style Editor</A>.</p>
+<p>You can find step by step instructions on how to design a style in the topic of <A href="designStyle.html">Designing a Style</A>.</p>
+	
+<p align="right"> <a href="./editingSubtitles.html"><img src="./images/arrowleft.png" width="30" height="20" alt="" /></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./stylesManager.html"><img src="./images/arrowright.png" width="30" height="20" alt="" /></a></p>		
+ </div>
+ </div>
+ <div id="footer"><p>Copyright©2022 Susan All Rights Reserved.</p></div>
+</div>
+</body>
+</html>

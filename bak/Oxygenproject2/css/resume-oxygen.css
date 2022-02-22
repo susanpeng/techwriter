@@ -1,0 +1,178 @@
+* {font-family: Geneva,Arial,Helvetica,san-serif;
+ font-size: 11pt;}
+RESUME {margin-left: auto ;
+  margin-right: auto ;
+padding: 20px;
+
+
+
+}
+
+PERSDATA {display: block;
+text-align: center;
+ border-bottom-style: solid;
+ border-bottom-width: thin;
+ margin-bottom: 20px;
+}
+
+PERSDATA NAME {
+	display: block;
+	font-size: 16pt;
+}
+PERSDATA EMAIL {
+	display: inline;
+	
+}
+PERSDATA PHONE {
+	display: inline;
+	
+}
+
+ADDRESS {display: block;
+margin-bottom: 25px;
+}
+CITY, STATE,  CODE {display: inline
+}
+CITY:after {content:", ";
+	
+}
+DATE {display: block;
+}
+OBJECTV:before{content:"Objective ";   font-weight: bold; font-family: Arial Black;}
+SKILLS:before{content:"Skills ";   font-weight: bold; font-family: Arial Black;}
+EDUCATN:before{content:"Education ";  font-weight: bold; font-family: Arial Black;}
+WORKEXP:before{content:"Work Experience ";  font-weight: bold; font-family: Arial Black;}
+INTRESTS:before{content:"Interests ";   font-weight: bold; font-family: Arial Black;}
+SECTION TITLE{display: block;  font-weight: bold; font-family: Arial Black;}
+REFS:before{content:"References ";   font-weight: bold;font-family: Arial Black;}
+
+OBJECTV, SKILLS, EDUCATN, WORKEXP, INTRESTS, REFS, SECTION {display: block;
+margin-bottom: 25px;
+padding-left: 8px;
+padding-right: 8px;
+}
+
+
+EDUCATN POSTSECD {
+	display: block;
+	margin-bottom: 20px;
+}
+EDUCATN  POSTSECD INSTNAME{
+	display: inline;
+font-weight: bold;
+}
+EDUCATN  POSTSECD LOCATION{
+	display: inline;
+
+}
+EDUCATN  POSTSECD PROGRAM{
+	display: block;
+
+}
+EDUCATN  POSTSECD DATE{
+display: block;
+
+}
+EDUCATN  POSTSECD INFO{
+	display: block;
+
+}
+WORKEXP JOB {
+	display: block;
+	margin-bottom: 20px;
+}
+WORKEXP JOB EMPLOYER{
+	font-weight: bold;
+}
+WORKEXP JOB POSITION {
+	display: block;
+	
+}
+REFS {
+	 border-bottom-style: solid;
+ border-bottom-width: thin;
+}
+REFS REFRNCE {
+	display: block;
+	margin-bottom: 20px;
+}
+REFS REFRNCE NAME {
+	display: inline;
+	font-weight: bold;
+}
+
+REFS REFRNCE PHONE {
+	display: block;
+	
+}
+/*
+
+
+EMAIL:before{content:"Email: ";
+}
+
+NAME:after, POSITION:after, COMPANY:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+
+SALUTATN { display: block;
+}
+SUBJECT { display: block;
+text-align: center;
+}
+
+*/
+
+p { display: block;
+}
+
+
+ul li {display: list-item;
+list-style-type:  disc;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ul[bullet="square"] li {display: list-item;
+list-style-type:  square;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ul[bullet="disc"] li {display: list-item;
+list-style-type:  disc;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ul[bullet="circle"] li {display: list-item;
+list-style-type:  circle;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+
+ul.disc li {display: list-item;  list-style-type: disc; }
+ul.circle li {display: list-item;  list-style-type: circle; }
+ul.square li {display: list-item;  list-style-type: square;  list-style-position: outside;  }
+div.mcomment {margin-left: 15px;
+	margin-bottom: 15px;
+	
+}
+	 
+	body { 
+font-family: Geneva,Arial,Helvetica,san-serif;
+ font-size: 10pt;
+ color: Black;
+ margin: 0px;
+  
+ 	  }
+	  
+
+ 

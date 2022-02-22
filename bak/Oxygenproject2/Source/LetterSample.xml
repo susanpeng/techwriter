@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LETTER SYSTEM "../DTDs/letter.dtd">
+<?xml-stylesheet type="text/xsl" href="../xslt/student_letter.xsl"?>
+<?xml-stylesheet type="text/css" href="../css/letter-oxygen.css"?>
+<?altova_sps ..\DTDs\letter.sps?>
+<LETTER>
+	<HEADING>
+		<SENDER>
+			<ADDRESS>
+				<ADDRLINE>36 5th Avenue</ADDRLINE>
+				<CITY>Roxboro</CITY>
+				<STATE>Que.</STATE>
+				<CODE>Y6T 2T3</CODE>
+				<COUNTRY>Canada</COUNTRY>
+			</ADDRESS>
+			<PHONE>555-5656</PHONE><FAX>555-4444</FAX><EMAIL>bmith@ftrcdcomm.com</EMAIL></SENDER>
+		<DATE>April 1, 2009</DATE>
+		<RECIPNT><NAME>Joe Smith</NAME><POSITION>Communications Specialist</POSITION><COMPANY>AVNS
+				Commmunications</COMPANY>
+			<ADDRESS>
+				<ADDRLINE>4565 Laird</ADDRLINE>
+				<CITY>Gardensview</CITY>
+				<STATE>CA</STATE>
+				<CODE>23465</CODE>
+				<COUNTRY>US</COUNTRY>
+			</ADDRESS>
+		</RECIPNT>
+	</HEADING>
+	<SALUTATN>Dear Joe</SALUTATN>
+	<SUBJECT>New Business Writing class</SUBJECT>
+	<body>
+		<p>This is a sample letter. It doesn't make much sense, but it shows you the elements
+			available in the letter DTD. This paragraph resides inside a &lt;p> tag. The p tag
+			represents a paragraph. </p>
+		<p>This is another paragraph. The body of your letter can include the following
+			elements:</p>
+		<ul bullet="square">
+			<li>&lt;p> - Paragraph</li>
+			<li>&lt;ul> - Bullet list</li>
+			<li>&lt;ol> - Numbered list</li>
+		</ul><p>Below is a numbered list:</p><ol>
+			<li>Each item in your list is inside an &lt;li> tag.</li>
+			<li>To insert a new item in your list, add another &lt;li> tag.</li>
+		</ol>
+	</body>
+	<foot>
+		<CLOSURE>Your truly</CLOSURE>
+		<NAME>Brent Smith</NAME>
+		<POSITION>E-Learning Specialist</POSITION>
+		<COMPANY>Online-learning.com</COMPANY>
+	</foot>
+</LETTER>

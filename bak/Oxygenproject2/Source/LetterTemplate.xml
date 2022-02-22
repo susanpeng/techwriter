@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LETTER SYSTEM "../DTDs/letter.dtd">
+<?xml-stylesheet type="text/xsl" href="../xslt/student_letter.xsl"?>
+<?xml-stylesheet type="text/css" href="../css/letter-oxygen.css"?>
+<?altova_sps ..\DTDs\letter.sps?>
+<LETTER>
+    <HEADING>
+        <SENDER>
+            <ADDRESS>
+                <ADDRLINE></ADDRLINE>
+                <CITY></CITY>
+                <STATE></STATE>
+                <CODE></CODE>
+            </ADDRESS>
+        </SENDER>
+        <DATE/>
+        <RECIPNT><NAME></NAME>
+            <ADDRESS>
+                <ADDRLINE></ADDRLINE>
+                <CITY></CITY>
+                <STATE></STATE>
+                <CODE></CODE>
+            </ADDRESS>
+        </RECIPNT>
+    </HEADING>
+    <body></body>
+    <foot>
+        <CLOSURE></CLOSURE>
+        <NAME></NAME>
+    </foot>
+</LETTER>

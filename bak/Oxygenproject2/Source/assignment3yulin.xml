@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE helpmanual SYSTEM "../DTDs/manual.dtd">
+<?xml-stylesheet type="text/xsl" href="../xslt/helpmanual.xsl"?>
+<?xml-stylesheet type="text/css" href="../css/manual-oxygen.css"?>
+<?altova_sps ..\DTDs\helpmanual.sps?>
+<?altova_xslfo ..\xslt\helpmanualpdf.xslt?>
+<helpmanual topicnumbers="yes">
+    <front>
+        <title>The Bookshelf Editor 1.1 User's Manual</title>
+        <author>Yulin</author>
+        <version>1.4</version>
+        <date>November 21, 2013</date>
+    </front>
+    <topic class="nestedtopiclinks">
+        <title>Downloading and Installing Bookshelf Editor</title>
+        <body/>
+        <topic>
+            <title>Downloading the software</title>
+            <body>
+                <p>To <indexterm term.entry="BookshelfEditor, downloading">download the Bookshelf
+                        Editor</indexterm> 1.1:</p>
+                <ol>
+                    <li>Log in to your course page.</li>
+                    <li>Under <b>Navigation</b>, click <b>My course</b>.</li>
+                    <li>Click the name of your course.</li>
+                    <li>Click <b>Course downloads</b>.</li>
+                    <li>To download the application installation file, click
+                            <b>BookshelfEditor11.exe</b>.<p>The application file
+                                <b>BookshelfEditor11.exe</b> is downloaded to your Downloads
+                            directory.</p><fig>
+                            <image href="../images/download_3.png" alt=""/>
+                        </fig></li>
+                </ol>
+            </body>
+        </topic>
+        <topic>
+            <title>Installing the software</title>
+            <body>
+                <p>To <indexterm term.entry="BookshelfEditor, installing">install the Bookshelf
+                        Editor</indexterm> 1.1:</p>
+                <ol>
+                    <li>In the Downloads folder, locate <b>BookshelfEditor11.exe</b>, and then
+                        double-click <b>BookshelfEditor11.exe</b>.</li>
+                    <li>In the <b>Security Warning</b> dialog box, click <b>Run</b>. <fig>
+                            <image href="../images/install_1.png" alt=""/>
+                        </fig></li>
+                    <li>In the <b>Bookshelf Editor 1.1 Install</b> dialog box, click <b>Next</b>.<fig>
+                            <image href="../images/install_2.png" alt=""/>
+                        </fig></li>
+                    <li>In the next dialog box that opens, click <b>I have read this ... </b>, and
+                        then click <b>Next</b>. <fig>
+                            <image href="../images/install_3.png" alt=""/>
+                        </fig></li>
+                    <li>In the next dialog box that opens, click <b>OK</b>.<fig>
+                            <image href="../images/install_5.png" alt=""/>
+                        </fig><p>Now, the Bookshelf Editor 1.1 has been successfully installed on
+                            your computer.</p></li>
+                </ol>
+            </body>
+        </topic>
+        <topic>
+            <title>Opening the software</title>
+            <body>
+                <p>To <indexterm term.entry="BookshelfEditor, opening">open the Bookshelf
+                        Editor</indexterm> 1.1:</p>
+                <ol>
+                    <li>Double-click <b>BookshelfEditor 1.1</b> icon on the desktop.<fig>
+                            <image href="../images/open_1.png" alt=""/>
+                        </fig></li>
+                    <li>On the <b>Student Bookshelf Editor</b> window, click <b>Agree</b>.<fig>
+                            <image href="../images/open_2.png" alt=""/>
+                        </fig><p>The Bookshelf Editor 1.1 now will open.</p><fig>
+                            <image href="../images/open_3.png" alt=""/>
+                        </fig></li>
+                </ol>
+            </body>
+        </topic>
+    </topic>
+    <topic class="nestedtopiclinks">
+        <title>Getting Started with Bookshelf Editor</title>
+        <body/>
+        <topic>
+            <title>Starting a new file</title>
+            <body>
+                <p>To <indexterm term.entry="bookshelf file, starting">start a new bookshelf
+                        file</indexterm>:</p>
+                <ol>
+                    <li>From the <b>File</b> Menu, click <b>New Bookshelf</b>.<fig>
+                            <image href="../images/file_menu_new.png" alt=""/>
+                        </fig><p>The <b>New Bookshelf Confirmation</b> dialog box asks you to
+                            confirm that you want to erase the current bookshelf.</p></li>
+                    <li>In the <b>New Bookshelf Conformation</b> dialog box, click <b>Yes</b>.<fig>
+                            <image href="../images/file_1.png" alt=""/>
+                        </fig><p>The existing bookshelf is erased. A new empty bookshelf is
+                            displayed in the work area.</p><fig>
+                            <image href="../images/file_2.png" alt=""/>
+                        </fig></li>
+                </ol>
+            </body>
+        </topic>
+        <topic>
+            <title>Opening an existing file</title>
+            <body>
+                <p>To <indexterm term.entry="bookshelf file, opening ">open an existing bookshelf
+                        file</indexterm>:</p>
+                <ol>
+                    <li>From the <b>File</b> Menu, click <b>Open</b>.<fig>
+                            <image href="../images/file_menu_open.png" alt=""/>
+                        </fig></li>
+                    <li>Navigate to the directory where your bookshelf file is saved.</li>
+                    <li>Choose your bookshelf file and click <b>Open</b>.<fig>
+                            <image href="../images/file_4_1.png" alt=""/>
+                        </fig>
+                        <p>The bookshelf in the existing file is displayed in the work area, and
+                            related information is displayed in the <b>Tool Panel</b>.</p><fig>
+                            <image href="../images/file_5.png" alt=""/>
+                        </fig></li>
+                </ol>
+            </body>
+        </topic>
+        <topic class="nestedtopiclinks">
+            <title>Assigning design properties</title>
+            <body/>
+            <topic>
+                <title>Adding a Bookshelf Title</title>
+                <body>
+                    <p><indexterm term.entry="bookshelf title, adding">To add a bookshelf
+                            title</indexterm>:</p>
+                    <ul>
+                        <li>In the <b>Bookshelf</b> block on the <b>Tool Panel</b>, type the
+                            bookshelf title in the <b>Title</b> field.<fig>
+                                <image href="../images/file_7.png" alt=""/>
+                            </fig></li>
+                    </ul>
+                    <note>You can also enter a bookshelf title in the <b>Title</b> field of the
+                            <b>Design Properties</b> dialog box.</note>
+                </body>
+            </topic>
+            <topic>
+                <title>Viewing the Construction</title>
+                <body>
+                    <p>To <indexterm term.entry="construction, viewing">view the
+                            construction</indexterm> of the bookshelf:</p>
+                    <ol>
+                        <li>Do one of the following:<ul>
+                                <li>From the <b>Tool Panel</b>, click <b>Design Properties</b>.<fig>
+                                        <image href="../images/file_toolpanel.png" alt=""/>
+                                    </fig></li>
+                                <li>From the <b>Bookshelf</b> Menu, click <b>Design Properties</b>.
+                                </li>
+                            </ul></li>
+                        <li>In the <b>Design Properties</b> dialog box, view the <b>Construction</b>
+                            of the bookshelf.<fig>
+                                <image href="../images/file_8_1.png" alt=""/>
+                            </fig><p>To close the <b>Design Properties</b> dialog box, click
+                                    <b>OK</b>.</p></li>
+                    </ol>
+                </body>
+            </topic>
+            <topic>
+                <title>View the Background</title>
+                <body>
+                    <p>To <indexterm term.entry="background, viewing">view the
+                            background</indexterm>:</p>
+                <ol>
+                        <li>Do one of the following:<ul>
+                                <li>From the <b>Tool Panel</b>, click <b>Design Properties</b>.<fig>
+                                        <image href="../images/file_toolpanel.png" alt=""/>
+                                    </fig></li>
+                                <li>From the <b>Bookshelf</b> Menu, click <b>Design
+                                    Properties</b>.</li>
+                            </ul></li>
+                        <li>In the <b>Design Properties</b> dialog box, view the <b>Background</b>
+                            of the bookshelf.<fig>
+                                <image href="../images/file_8_2.png" alt=""/>
+                            </fig><p>To close the <b>Design Properties</b> dialog box, click
+                                    <b>OK</b>.</p></li>
+                    </ol>
+                </body>
+            </topic>
+            <topic>
+                <title>View the Statistics</title>
+                <body><p>To <indexterm term.entry="statistics, viewing">view the Statistics</indexterm>:</p>
+                    <ol>
+                        <li>Do one of the following:<ul>
+                                <li>From the <b>Tool Panel</b>, click <b>Design Properties</b>.<fig>
+                                        <image href="../images/file_toolpanel.png" alt=""/>
+                                    </fig></li>
+                                <li>From the <b>Bookshelf</b> Menu, click <b>Design
+                                    Properties</b>.</li>
+                            </ul></li>
+                        <li>In the <b>Design Properties</b> dialog box, view the <b>Statistics</b>
+                            of the bookshelf.<fig>
+                                <image href="../images/file_8_3.png" alt=""/>
+                            </fig><p>To close the <b>Design Properties</b> dialog box, click
+                                    <b>OK</b>.</p></li>
+                    </ol></body>
+            </topic>
+        </topic>
+        <topic>
+            <title>Saving (Save as) a file</title>
+            <body>
+                <p>To <indexterm term.entry="bookshelf file, saving">save a bookshelf
+                        file</indexterm>:</p>
+                <ul>
+                    <li>From the <b>File</b> Menu, click <b>Save</b>.<fig>
+                            <image href="../images/file_menu_save.png" alt=""/>
+                        </fig><p>The bookshelf file will be saved.</p></li>
+                </ul>
+                <p>To save bookshelf file with a different name</p>
+                <ol>
+                    <li>From the <b>File</b> Menu, click <b>Save As</b>.<fig>
+                            <image href="../images/file_menu_saveas.png" alt=""/>
+                        </fig></li>
+                    <li>Type the file name you prefer in the <b>File name</b> field, and then click
+                            <b>Save</b>.<p>The bookshelf file will be saved with a different file
+                            name.</p></li>
+                </ol>
+            </body>
+        </topic>
+    </topic>
+    <topic class="nestedtopiclinks">
+        <title>Working with Shelves</title>
+        <body/>
+        <topic class="nestedtopiclinks">
+            <title>Adding a shelf</title>
+            <body>
+                <p>To <indexterm term.entry="shelf, adding">add a shelf</indexterm> to the
+                    bookshelf:</p>
+                <ol>
+                    <li>From the <b>Bookshelf</b> Menu, click <b>Add New Shelf</b>.<fig>
+                            <image href="../images/shelf_1.png" alt=""/>
+                        </fig></li>
+                    <li>In the <b>Shelf Properties</b> dialog box, click <b>OK</b>.<fig>
+                            <image href="../images/shelf_2.png" alt=""/>
+                        </fig><p>A new shelf appears at the bottom of your shelf stack.</p><fig>
+                            <image href="../images/shelf_3.png" alt=""/>
+                        </fig></li>
+                </ol>
+            </body>
+        </topic>
+        <topic>
+            <title>Deleting a shelf</title>
+            <body>
+                <p>To <indexterm term.entry="shelf, deleting">delete a shelf</indexterm> from
+                    bookshelf:</p>
+                <ol>
+                    <li>Click the shelf you want to delete.<fig>
+                            <image href="../images/shelf_14.png" alt=""/>
+                        </fig><p>The red arrow appears indicating the currently selected
+                        shelf.</p></li>
+                    <li>From the <b>Bookshelf</b> Menu, click <b>Delete Selected Shelf</b>.<fig>
+                            <image href="../images/shelf_4.png" alt=""/>
+                        </fig><p>The selected shelf is deleted.</p><fig>
+                            <image href="../images/shelf_5.png" alt=""/>
+                        </fig></li>
+                </ol>
+            </body>
+        </topic>
+        <topic>
+            <title>Changing the size of the shelf</title>
+            <body>
+                <p>To <indexterm term.entry="shelf, changing size">change the size of the
+                        shelf</indexterm>:</p>
+                <ol>
+                    <li>Click the shelf which size you want to change.<p>The red arrow appears
+                            pointing to the shelf selected.</p></li>
+                    <li>Do one of the following:<ul>
+                            <li>From the <b>Bookshelf</b> Menu, click <b>Shelf Properties</b>.<fig>
+                                    <image href="../images/shelf_6.png" alt=""/>
+                                </fig></li>
+                            <li>From the <b>Tool Panel</b>, click <b>Shelf Properties</b>. </li>
+                        </ul></li>
+                    <li>In the <b>Shelf Properties</b> dialog box, Click the down arrow under the
+                            <b>Shelf Width</b>.<fig>
+                            <image href="../images/shelf_7.png" alt=""/>
+                        </fig></li>
+                    <li>From the <b>Shelf Width</b> drop-down menu, select the percentage you want
+                        to set.<fig>
+                            <image href="../images/shelf_8.png" alt=""/>
+                        </fig></li>
+                    <li>In the <b>Shelf Properties</b> dialog box, click <b>OK</b>.<fig>
+                            <image href="../images/shelf_9.png" alt=""/>
+                        </fig><p>The size of the shelf will change.</p><fig>
+                            <image href="../images/shelf_10.png" alt=""/>
+                        </fig></li>
+                </ol>
+            </body>
+        </topic>
+        <topic>
+            <title>Changing the alignment of the shelf</title>
+            <body>
+                <p>To <indexterm term.entry="shelf, changing alignment">change the alignment of the
+                        shelf</indexterm>:</p>
+                <ol>
+                    <li>Click the shelf which alignment you want to change.<p>The red arrow appears
+                            pointing to the shelf selected.</p></li>
+                    <li>Do one of the following:<ul>
+                        <li>From the <b>Bookshelf</b> Menu, click <b>Shelf Properties</b>.<fig>
+                            <image href="../images/shelf_12.png" alt=""/>
+                        </fig></li>
+                            <li>From the <b>Tool Panel</b>, click <b>Shelf Properties</b>.</li>
+                        </ul></li>
+                    <li>In the <b>Shelf Properties</b> dialog box, click <b>Right</b> under
+                            <b>Justification</b>, and then click <b>OK</b>. <fig>
+                            <image href="../images/shelf_13.png" alt=""/>
+                        </fig><p>The alignment of the shelf will change.</p><fig>
+                            <image href="../images/shelf_11.png" alt=""/>
+                        </fig>
+                    </li>
+                </ol>
+            </body>
+        </topic>
+    </topic>
+    <topic class="nestedtopiclinks">
+        <title>Opening and Using your Bookshelf</title>
+        <body/>
+        <topic>
+            <title>Opening the bookshelf in your browser</title>
+            <body>
+                <p>To <indexterm term.entry="bookshelf, opening">open the bookshelf</indexterm> in
+                    your browser:</p>
+                <ul>
+                    <li>Locate the file <b>Bookshelf.html</b> in windows explorer, and then
+                        double-click the <b>Bookshelf.html</b>.<fig>
+                            <image href="../images/use_3.png" alt=""/>
+                        </fig><p>The default browser will open with your bookshelf web page.</p><fig>
+                            <image href="../images/use_1.png" alt=""/>
+                        </fig></li>
+                </ul>
+            </body>
+        </topic>
+        <topic>
+            <title>Accessing book contents</title>
+            <body>
+                <p>To <indexterm term.entry="book content, accessing">access book
+                        contents</indexterm>:</p>
+                <ul>
+                    <li>Click the book you want to read.<fig>
+                            <image href="../images/use_4.png" alt=""/>
+                        </fig><p>The book content will display in the web page.</p><fig>
+                            <image href="../images/use_2.png" alt=""/>
+                        </fig></li>
+                </ul>
+            </body>
+        </topic>
+    </topic>
+    <back/>
+</helpmanual>

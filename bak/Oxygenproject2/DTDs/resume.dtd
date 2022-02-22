@@ -1,0 +1,79 @@
+<!-- Resume DTD - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ENTITY % marking.text "(#PCDATA| mcomment )*">
+
+<!-- Top Level Structure- - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT RESUME (PERSDATA, OBJECTV, SKILLS,  WORKEXP, EDUCATN, SECTION?, INTRESTS?, REFS?)>
+<!ATTLIST RESUME
+	id ID #IMPLIED
+>
+<!-- Personal Data - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT PERSDATA (NAME, EMAIL, PHONE?,  ADDRESS )>
+<!ELEMENT NAME (#PCDATA)>
+
+
+<!-- Address - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT ADDRESS (ADDRLINE, CITY, STATE, CODE, COUNTRY? )>
+<!ELEMENT ADDRLINE %marking.text;>
+<!ELEMENT CITY %marking.text;>
+<!ELEMENT STATE %marking.text;>
+<!ELEMENT COUNTRY %marking.text;>
+<!ELEMENT CODE %marking.text;>
+
+<!-- Phone/Fax/Email - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT PHONE %marking.text;>
+<!ELEMENT EMAIL %marking.text;>
+
+<!-- Objectives - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT OBJECTV (p)>
+<!-- Skills - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT SKILLS (p | ul)*>
+<!-- Education - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT EDUCATN (POSTSECD+)>
+<!ELEMENT POSTSECD (INSTNAME, LOCATION, PROGRAM, DATE, INFO?)>
+<!ELEMENT INFO %marking.text;>
+<!ELEMENT INSTNAME %marking.text;>
+<!ELEMENT PROGRAM %marking.text;>
+<!-- Work Experience - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT WORKEXP (JOB+)>
+<!-- Interests - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT INTRESTS (p)+>
+<!-- Free Form Section - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT SECTION (TITLE, (p | ul)*)>
+<!ELEMENT TITLE %marking.text;>
+<!-- References - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT REFS  (p?, REFRNCE*)>
+<!ELEMENT REFRNCE (NAME, POSITION, PHONE, EMAIL?)>
+
+<!-- Job Details - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT JOB (EMPLOYER, LOCATION,  POSITION, DATE, ul)>
+<!ELEMENT POSITION %marking.text;>
+<!ELEMENT EMPLOYER  %marking.text;>
+<!ELEMENT LOCATION  %marking.text;>
+<!ELEMENT DATE %marking.text;>
+
+<!-- Paragraphs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT p  (#PCDATA| b |i | weblink | mcomment)*>
+
+<!-- Unnumbered List - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT ul (li+)>
+<!ATTLIST ul
+	bullet (circle | square | disc) #IMPLIED
+	>
+	<!ELEMENT li (#PCDATA | b | i  |  p | ul | mcomment)*>
+
+<!-- Emphasized Phrases - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT b (#PCDATA)>
+
+<!-- ITALICIZED Phrases - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT i (#PCDATA)>
+
+<!-- Marker's Comments - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT mcomment (commentp+)>
+<!ELEMENT commentp (#PCDATA)>
+
+<!-- External Hypertext Links - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT weblink (#PCDATA)>
+<!ATTLIST weblink
+	href CDATA #REQUIRED
+>
+<!-- END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->

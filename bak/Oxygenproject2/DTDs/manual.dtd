@@ -1,0 +1,190 @@
+<!-- Manual DTD - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Online-learning.com  - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!-- Parameter Entities - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ENTITY % lists "ol | ul">
+<!ENTITY % phrases "b | i">
+<!ENTITY % indxing "indexterm">
+<!ENTITY % subtext "comment | mcomment">
+<!ENTITY % block "(p |%lists;| fig |lq | table | note | pre | dropdownlink | section)*">
+<!ENTITY % refs "xref | weblink">
+<!ENTITY % text "(#PCDATA| image | q | %phrases;|%refs;|%subtext;|%indxing; )*">
+<!ENTITY % simpletext "(#PCDATA  | %subtext;)*">
+<!ENTITY % title.text "(#PCDATA| image)*">
+<!-- Virtual Exceptions - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ENTITY % weblink.text "(#PCDATA| image |%indxing;)*">
+<!ENTITY % emph.text "(#PCDATA|%subtext;|%indxing;)*">
+<!ENTITY % mcomment.text "(#PCDATA | %refs;)*">
+
+<!-- Top Level Elements - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT helpmanual (front, topic+, back)>
+<!ATTLIST helpmanual id ID #IMPLIED	topicnumbers (yes | no) "yes">
+	
+	<!-- Front elements  - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT front (title, author?, version?, date?, preface?)>
+
+<!ELEMENT title %title.text;>
+<!ATTLIST title alt CDATA #IMPLIED>
+
+	<!ELEMENT author %simpletext;>
+<!ELEMENT version %simpletext;>
+<!ELEMENT date %simpletext;>
+<!ELEMENT preface (p+)>
+
+<!-- Topics - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT topic (title, body, related-links?, topic*)>
+<!ATTLIST topic
+	id ID #IMPLIED
+	class (nestedtopiclinks | nonestedtopiclinks) "nonestedtopiclinks"
+>
+
+<!ELEMENT body %block;>
+
+<!ELEMENT section (title,(p |%lists;| fig |lq | table | note | pre | dropdownlink)*)> 
+
+<!-- Paragraphs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT p %text;>
+<!ATTLIST p
+	id ID #IMPLIED
+>
+
+<!ELEMENT note (#PCDATA  | %subtext; | %phrases; |%refs;)*>
+<!ATTLIST note type (note | tip | caution) "note">
+<!ELEMENT pre (#PCDATA)>
+
+
+<!-- Related links - a set of links at the bottom of a topic - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT related-links (link)+>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link id IDREF #REQUIRED>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!-- COMMENTs can be simply inserted at the point of
+     reference.  -->
+<!-- COMMENTs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT comment (#PCDATA)>
+
+
+<!-- External Hypertext Links (Internet) - - - - - - - - - - - - - - - -  -->
+<!ELEMENT weblink %weblink.text;>
+<!ATTLIST weblink
+	href CDATA #REQUIRED
+>
+<!-- Numbered List - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT ol (li+)>
+<!ELEMENT li (#PCDATA | b | i | indexterm | weblink| xref | p | fig | table | ol | ul | %subtext; | q | dropdownlink)*>
+<!ATTLIST li id ID #IMPLIED>
+
+<!-- Unnumbered List - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT ul (li+)>
+<!ATTLIST ul
+	bullet (circle | square | disc) #IMPLIED
+	>
+
+<!-- Inline GRAPHIC - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT image EMPTY>
+<!ATTLIST image
+	href CDATA #REQUIRED
+	alt CDATA #REQUIRED
+	width CDATA #IMPLIED
+	height CDATA #IMPLIED
+>
+<!-- FIGUREs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!--   Use the figtitle element for caption. -->
+<!ELEMENT fig (figtitle?, desc?, image)>
+<!ATTLIST fig
+	id ID #IMPLIED
+>
+<!ELEMENT desc %simpletext;>
+<!ELEMENT figtitle (#PCDATA)>
+
+<!-- Dropdown links - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT dropdownlink (linktext, dropdowntext) >
+<!ELEMENT linktext (#PCDATA)>
+<!ELEMENT dropdowntext (p |%lists;| fig | note | pre)*>
+
+<!-- Back matter - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+	<!ELEMENT back (biblio?, glossary?)>
+<!ELEMENT biblio (custmbib)+>
+<!ELEMENT glossary (glossentry)+>
+
+<!-- GLOSSARY - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT glossentry (glossterm, glossdef)>
+<!ELEMENT glossterm (#PCDATA)>
+<!ELEMENT glossdef (#PCDATA  | %subtext; | %phrases;)*>
+<!ATTLIST glossentry	id ID #IMPLIED
+>
+<!-- Index terms - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT indexterm %simpletext;>
+<!ATTLIST indexterm
+	term.entry CDATA #IMPLIED
+>
+<!-- Custom BIBLIOgraphy - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT custmbib (p+)>
+<!ATTLIST custmbib
+	id ID #IMPLIED
+>
+<!-- Long Quotations - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT lq %simpletext;>
+
+<!-- Short Quotations - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT q %emph.text;>
+
+<!-- Emphasized Phrases - bold and italic- - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT b %emph.text;>
+<!ELEMENT i %emph.text;>
+
+<!-- Hypertext Links ===============================================-->
+<!ELEMENT xref %weblink.text;>
+<!ATTLIST xref
+	id IDREF #REQUIRED
+	
+>
+<!-- Marker's COMMENTs - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT mcomment (p, %block;)>
+<!ATTLIST mcomment
+	id ID #IMPLIED
+>
+<!-- TABLE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+
+<!ELEMENT table (caption?, thead?, tbody)>
+<!ATTLIST table
+	width CDATA #IMPLIED
+	cellpadding NMTOKEN #IMPLIED
+	cellspacing NMTOKEN #IMPLIED
+	border NMTOKEN #IMPLIED
+	rules (none | groups | rows | cols | all) #IMPLIED 
+	bgcolor CDATA #IMPLIED
+	align (left | right | center) #IMPLIED
+>
+<!ELEMENT caption (#PCDATA)>
+
+<!ELEMENT tbody (tr+)>
+<!ELEMENT thead (tr+)>
+<!ELEMENT tr (td | th)+>
+<!ATTLIST tr
+	valign CDATA #IMPLIED
+	align CDATA #IMPLIED
+	bgcolor CDATA #IMPLIED
+	width CDATA #IMPLIED
+	height CDATA #IMPLIED
+>
+<!ELEMENT td (#PCDATA| %lists; | p| image | q | %phrases;|%refs;|%subtext;|%indxing;)*>
+<!ATTLIST td
+	width CDATA #IMPLIED
+	valign NMTOKEN #IMPLIED
+	align (left | right | center | justify) #IMPLIED
+	bgcolor CDATA #IMPLIED
+	width CDATA #IMPLIED
+	height CDATA #IMPLIED
+>
+<!ELEMENT th %text;>
+<!ATTLIST th
+    width CDATA #IMPLIED
+	valign NMTOKEN #IMPLIED
+	align (left | right | center | justify) #IMPLIED
+	bgcolor CDATA #IMPLIED
+	width CDATA #IMPLIED
+	height CDATA #IMPLIED
+	>
+
+<!-- END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->

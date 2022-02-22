@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TechnicalWriter</title>
+		<!--<base href="http://localhost">
+		-->
+		<link href="/styles/style.css" rel="stylesheet" type="text/css">
+
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	</head>
+
+<body>
+
+	<div id="wholepage">
+	<div id="header">	</div>
+		<script>
+			$("#header").load("./hf/header_m.html");
+		</script>
+
+		<script>
+				$(document).ready(function(){
+				$('#home').addClass('selected');
+			});
+		</script>
+
+	<div id="middle">
+		<!--<p align="center"><img src="images/computer_coffee.jpg" width="700" height="450" alt=""/>
+		-->
+		
+		  <table id="servicetable" border="0">
+			  
+            <tbody>
+              <tr>
+                <td scope="col"><p><img src="./images/techwriter.png" width="75" height="75" alt=""/></p>
+                </td>
+                <td scope="col" width="650px">
+					<p align="left">&nbsp;&nbsp;&nbsp;&nbsp;Professional Technical Writing</p>
+                </td>
+              </tr>
+			  <tr>
+                <td scope="col"><p><img src="./images/courseDesign.jpg" width="75" height="75" alt=""/></p>
+                </td>
+                <td scope="col" width="650px">
+                <p align="left">&nbsp;&nbsp;&nbsp;&nbsp;Courses and Training Materials Creating</p></td>
+              </tr>
+              <tr>
+                <td><p><img src="./images/videoEditing.jpg" width="75" height="75" alt=""/></p></td>
+                <td width="650px"><p align="left">&nbsp;&nbsp;&nbsp;&nbsp;Video  & Audio Production</p></td>
+              </tr>
+            </tbody>
+          </table>
+         
+         	
+		
+
+	</div>
+
+	<div id="footer"></div>
+	<script>
+		$("#footer").load("./hf/footer.html");
+		</script>
+	
+</div>
+</body>
+
+</html>

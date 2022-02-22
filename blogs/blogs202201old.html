@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blogs</title>
+	<link href="/styles/style.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wholepage">
+
+	<div id="header"></div>
+	<script>$("#header").load("../hf/header.html");</script>
+	<script>
+		$(document).ready(function(){
+			$('#blogs').addClass('selected');
+
+		});
+	</script>
+<div id="middle">
+	<div class="row">
+	<div class="column left">
+		<form action="http://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+		<input autocomplete="on" class="form-controls search" name="q" placeholder="" required="required"  type="text" size="23">
+		&nbsp;&nbsp;&nbsp;&nbsp;<button class="button" type="submit" size="4">Search</button>
+		</form>
+		<br>
+		<p class="welcome">Welcome to My Blog</p>
+		<hr>
+		<p><a id="server" href="#">Windows Server 2016 Disappears From Network</a></p>
+		<p><a id="myuserfolder" href="#">How to Access My User Folder From The Terminal on Mac</a></p>
+
+		</div>
+	<div class="column right">
+		<div id="includeblog"></div>
+			<script type="text/javascript">
+				$(document).ready(function(){
+						$("#includeblog").load("./serverNotShow.html");
+						$("#server").click(function(){
+							$("#includeblog").load("./serverNotShow.html");})
+						$("#myuserfolder").click(function(){
+							$("#includeblog").load("./myuserfolder.html");})
+				})
+			</script>
+</div>
+
+	<div id="footer"></div>
+	<script>
+		$("#footer").load("../hf/footer.html");
+		</script>
+</div>
+</body>
+</html>

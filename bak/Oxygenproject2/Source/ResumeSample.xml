@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RESUME SYSTEM "../DTDs/resume.dtd">
+<?xml-stylesheet type="text/xsl" href="../xslt/student_resume.xsl"?>
+<?xml-stylesheet type="text/css" href="../css/resume-oxygen.css"?>
+<?altova_sps ../DTDs/resume.sps?>
+<RESUME id="ID_1">
+	<PERSDATA><NAME>Susan Smith</NAME>
+		<EMAIL>ssmith@online-learning.com</EMAIL>
+		<PHONE> 555-3411 </PHONE>
+		<ADDRESS>
+			<ADDRLINE>Suite 415, 5929L Jeanne D'Arc Blvd</ADDRLINE>
+			<CITY>Ottawa</CITY>
+			<STATE>ON</STATE>
+			<CODE>K1C 7K2</CODE>
+			<COUNTRY>Canada</COUNTRY>
+		</ADDRESS></PERSDATA>
+	<OBJECTV>
+		<p>To work in a challenging and rewarding environment.<mcomment>
+				<commentp>this is a comment</commentp>
+			</mcomment>
+		</p>
+	</OBJECTV>
+	<SKILLS><p>List your skills here. You can add your skills using a paragraph or a bullet
+			list.</p>
+		<ul>
+			<li>FIrst skill</li>
+			<li>Second skill</li>
+			<li>Third skill</li>
+		</ul>
+	</SKILLS>
+	<WORKEXP>
+		<JOB>
+			<EMPLOYER>AVNS Communications</EMPLOYER>
+			<LOCATION>California, US</LOCATION>
+			<POSITION>Web Designer</POSITION><DATE>1998 - 2002</DATE>
+			<ul>
+				<li>Maintained company website</li>
+				<li>Set up a database for online shopping</li>
+			</ul>
+		</JOB>
+		<JOB>
+			<EMPLOYER>Online-learning.com</EMPLOYER>
+			<LOCATION>ON, Canada</LOCATION>
+			<POSITION>Online Instructor</POSITION><DATE>2002- present</DATE>
+			<ul>
+				<li>List job features here</li>
+				<li>Another job feature</li>
+			</ul>
+		</JOB>
+	</WORKEXP>
+	<EDUCATN>
+		<POSTSECD>
+			<INSTNAME>University of Waterloo</INSTNAME>
+			<LOCATION>Waterloo, Ontario</LOCATION>
+			<PROGRAM>B.A.</PROGRAM><DATE>1995-12-12</DATE><INFO>Major in English</INFO></POSTSECD>
+		<POSTSECD>
+			<INSTNAME>Online-learning.com</INSTNAME>
+			<LOCATION>Ottawa, Ontario</LOCATION>
+			<PROGRAM>Certificate in Information
+				Design</PROGRAM><DATE>2008-12-12</DATE><INFO>Completed courses in User Interface
+				Analysis and Design, Graphic Design, Technical Writing, Usability Testing, and XML
+				Authoring</INFO></POSTSECD>
+	</EDUCATN>
+	<SECTION><TITLE>Additional Qualifications</TITLE><p>You can add an optional &lt;SECTION> element
+			if you want to add additional sections to your resume. This is a web link:<weblink
+				href="http://www.online-learning.com">Online-learning.com</weblink>
+		</p><p>You can include paragraphs and bullet lists in each &lt;SECTION> tag..</p>
+		<ul>
+			<li>First list item</li>
+			<li>Second list item</li>
+		</ul>
+	</SECTION>
+	<INTRESTS>
+		<p>Music, piano, reading</p>
+	</INTRESTS>
+	<REFS>
+		<REFRNCE>
+			<NAME>Joe Smith</NAME>
+			<POSITION>Senior Web Designer</POSITION>
+			<PHONE> 555-6778 </PHONE>
+			<EMAIL>jsmith@avnscomm.com</EMAIL>
+		</REFRNCE>
+		<REFRNCE>
+			<NAME>Jane Sorter</NAME>
+			<POSITION>Instructor Coordinator</POSITION>
+			<PHONE> 555-1234</PHONE>
+			<EMAIL>jsorter@online-learning.com</EMAIL>
+		</REFRNCE>
+	</REFS>
+</RESUME>

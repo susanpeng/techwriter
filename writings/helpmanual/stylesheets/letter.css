@@ -1,0 +1,90 @@
+
+
+p { display: block;
+}
+
+foot { display: block;	margin-top: 35px;
+}
+
+
+div.mcomment {margin-left: 15px;
+	margin-bottom: 15px;
+	
+}
+div.lettermain {  text-align: left;
+width: 725px;
+   background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+
+	padding: 40px;
+ 	  }
+	 div.resumemain {  text-align: left;
+width: 775px;
+   background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	padding: 30px;
+ 	  }
+	body { 
+font-family: Geneva,Arial,Helvetica,san-serif;
+ font-size: 10pt;
+ color: Black;
+ margin: 0px;
+
+ 	  }
+	  
+	   h2          { color: darkblue; }
+		 
+		 div.sender {
+		 	margin-top: 35px;
+	margin-bottom: 25px;
+			
+		 }
+		  div.recipnt {
+		 	margin-top: 45px;
+}
+p.subject {
+	text-align: center;
+}
+			
+			  div.foot {
+		 	margin-top: 55px;
+}	
+a img {
+	border: none;
+}
+ 
+div.persdata {text-align: center;
+margin-bottom: 30px;
+margin-top: 20px;
+}
+
+span.resumename {font-size: 16pt;
+}
+
+td.heading { font-weight: bold;
+ 
+}
+
+td div.postscd {margin-bottom: 15px;
+}
+
+div.resumemain table tbody tr td ul li {
+padding: 0;
+margin-left: -1.75em; 
+}
+div.lettermain ul li {
+padding: 0;
+
+}
+.firstp {padding-top: 0;
+margin-top: 0;
+}
+td ul {padding-top: 0;
+margin-top: 0;
+}
+
+table {margin-left:auto; margin-right:auto;}

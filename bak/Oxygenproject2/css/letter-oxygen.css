@@ -1,0 +1,181 @@
+* {font-family: Geneva,Arial,Helvetica,san-serif;
+ font-size: 11pt;}
+LETTER {text-align: left;
+ margin-left: 15%;
+ margin-right: 15%;
+
+
+}
+
+HEADING {display: block;
+font-family: Geneva,Arial,Helvetica,san-serif;
+ font-size: 10pt;
+}
+SENDER {display: block;
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+
+ADDRESS ADDRLINE, ADDRESS COUNTRY {display: block; 
+}
+CITY, STATE,  CODE {display: inline
+}
+CITY:after {content:", ";
+	
+}
+DATE {display: block;
+}
+RECIPNT { display: block;
+	margin-top: 45px;
+}
+
+
+PHONE, FAX, EMAIL, NAME, POSITION, COMPANY, CLOSURE {display: block; 
+
+}
+
+PHONE:before{content:"Phone: "; 
+}
+FAX:before{content:"Fax: ";
+}
+
+EMAIL:before{content:"Email: ";
+}
+
+NAME:after, POSITION:after, COMPANY:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+
+
+SALUTATN { display: block;
+}
+SUBJECT { display: block;
+text-align: center;
+}
+p { display: block;
+}
+ol li {display: list-item;
+list-style-type:  decimal;
+list-style-position: inside;
+margin-left: 25px;
+ 
+}
+
+ol li ol li {display: list-item;
+list-style-type:     lower-alpha;
+list-style-position: inside;
+margin-left: 25px;
+ 
+}
+ol li ol li ol li{display: list-item;
+list-style-type:  decimal;
+list-style-position: inside;
+margin-left: 25px;
+ 
+}
+
+ul li {display: list-item;
+list-style-type:  disc;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ol li ul li {display: list-item;
+list-style-type:  disc;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ol li ul li ul li{display: list-item;
+list-style-type:  circle;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ul[bullet="square"] li {display: list-item;
+list-style-type:  square;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ul[bullet="disc"] li {display: list-item;
+list-style-type:  disc;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ul[bullet="circle"] li {display: list-item;
+list-style-type:  circle;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ol li ul[bullet="square"] li {display: list-item;
+list-style-type:  square;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ol li ul[bullet="disc"] li {display: list-item;
+list-style-type:  disc;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ol li ul[bullet="circle"] li {display: list-item;
+list-style-type:  circle;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+foot { display: block;	margin-top: 35px;
+}
+
+ul.disc li {display: list-item;  list-style-type: disc; }
+ul.circle li {display: list-item;  list-style-type: circle; }
+ul.square li {display: list-item;  list-style-type: square;  list-style-position: outside;  }
+ol li{display: list-item;  list-style-type: decimal;  }
+div.mcomment {margin-left: 15px;
+	margin-bottom: 15px;
+	
+}
+div.lettermain {  text-align: left;
+ margin-left: 15%;
+ margin-right: 15%;
+ 
+  	 }
+	 
+	body { 
+font-family: Geneva,Arial,Helvetica,san-serif;
+ font-size: 10pt;
+ color: Black;
+ margin: 0px;
+  
+ 	  }
+	  
+	   h2          { color: darkblue; }
+		 
+		 div.sender {
+		 	margin-top: 35px;
+	margin-bottom: 25px;
+			
+		 }
+		  div.recipnt {
+		 	margin-top: 45px;
+}
+p.subject {
+	text-align: center;
+}
+			
+			  div.foot {
+		 	margin-top: 35px;
+}	
+a img {
+	border: none;
+}
+ 

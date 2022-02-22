@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE helpmanual SYSTEM "../DTDs/manual.dtd">
+<?xml-stylesheet type="text/xsl" href="../xslt/helpmanual.xsl"?>
+<?xml-stylesheet type="text/css" href="../css/manual-oxygen.css"?>
+<?altova_sps ..\DTDs\helpmanual.sps?>
+<?altova_xslfo ..\xslt\helpmanualpdf.xslt?>
+<helpmanual>
+    <front>
+        <title>Enter your manual title here</title>
+    </front>
+    <topic>
+        <title>Enter your topic title here</title>
+        <body><p>This is a paragraph. Add paragraphs using the p tag.</p></body>
+    </topic>
+    <back></back>
+</helpmanual>

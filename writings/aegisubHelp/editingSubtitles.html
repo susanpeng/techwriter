@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aegisub User Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" text = "text/css" href = styles/style.css>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wholepage">
+ <div align="center"><img src="./images/banner.png" width="600" height="100" alt=""/></div>
+ 
+ <script>
+  $(document).ready(function(){
+  $('#subtitle').addClass('selected');
+});
+</script>
+ 
+ <div class="middle">
+	<div id="sidenav"></div>
+	<script>$("#sidenav").load("sidebar.html");</script>
+	
+<div class="main">
+
+<H3>Editing Subtitles</H3>
+<hr>
+<p>Editing subtitles is the first task you do for adding subtitles to a video because you need to have subtitles before you can add them. Aegisub is a software program originally designed for editing subtitles. The editing procedure is similar to that of a general text editing software, but Aegisub has some functions designed specifically for subtitle editing.</p>
+
+<p>To edit subtitles:</p>
+
+<OL>
+  <LI value="1">From  menu, Click <strong>File | New Subtitles</strong>.</LI>
+	<p>The subtitles editor and the subtitles grid will be displayed.</p>
+  <p><img src="images/new_sub.png" width="430" height="230" alt=""/></p>
+  
+  <LI value="2">In subtitles editor, click the style drop-down menu to select desired style from the list.</LI>
+  <p><img src="images/select_style.png" width="430" height="270" alt=""/></p>
+  <LI value="3">Type subtitles in the subtitles editor.</LI>
+  <p>The same subtitles will also be displayed in the subtitles grid.</p>
+  <p><img src="images/type_sub.png" width="430" height="300" alt=""/></p>
+  <LI value="4">To finish the current subtitle line and start a new subtitle line, do one of the following:
+    <UL style="list-style-type:disc">
+      <LI value="1">Click <strong>Commit</strong> button.</LI>
+      <LI value="2">Press Enter.</LI>
+    </UL>
+      <p><img src="images/finishe_first.png" width="430" height="217" alt=""/></p>
+</LI>
+  <LI value="5">If you want to modify a line that is not in the subtitles editor,  click the line in the subtitles grid.</LI>
+  <p> The line will be displayed in the subtitles editor.               The background of the selected line in the subtitles grid becomes light blue.</p>
+  <p><img src="images/edit_line.png" width="430" height="250" alt=""/></p>
+  <LI value="6">When you finish editing subtitles, click <strong>File | Save Subtitles</strong> to save the subtitle file.</LI>
+  <p><img src="images/save_sub.png" width="430" height="250" alt=""/></p>
+  <LI value="7">Type the file name in the <strong>File name</strong> field, and click <strong>Save</strong> button to save subtitles file.</LI>
+  <p><img src="images/file_name.png" width="430" height="230" alt=""/></p>
+</OL>
+<p align="right"> <a href="./mainScreen.html"><img src="./images/arrowleft.png" width="30" height="20" alt="" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./workingWithStyles.html"><img src="./images/arrowright.png" width="30" height="20" alt="" /></a></p>	
+ </div>
+ </div>
+ <div id="footer"><p>Copyright©2022 Susan All Rights Reserved.</p></div>
+</div>
+</body>
+</html>

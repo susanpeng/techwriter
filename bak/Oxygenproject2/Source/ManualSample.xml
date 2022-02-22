@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE helpmanual SYSTEM "../DTDs/manual.dtd">
+<?xml-stylesheet type="text/xsl" href="../xslt/helpmanual.xsl"?>
+<?xml-stylesheet type="text/css" href="../css/manual-oxygen.css"?>
+<?altova_sps ..\DTDs\helpmanual.sps?>
+<?altova_xslfo ..\xslt\helpmanualpdf.xslt?>
+<helpmanual topicnumbers="yes">
+    <front>
+        <title>Helpmanual DTD</title>
+        <author>Susan Bodnik</author>
+        <version>1.1</version>
+        <date>October 8, 2013</date>
+        <preface>
+            <p>This XML file contains examples of the elements that are available in the Helpmanual
+                DTD. If you are not sure about an element in the Helpmanual DTD, you can consult
+                this file to see examples of how to use the element.</p>
+        </preface>
+    </front>
+    <topic id="viewingtags">
+        <title>Author view</title>
+        <body>
+            <p>When you first open this document in OxygenXML, you will see the XML elements. You
+                can see a WYSIWYG view of the XML file by clicking the Author tab in the lower left
+                corner of the main content pane. This view will give you an approximate idea of what
+                the document will look like after conversion to <b>HTML</b>. The WYSIWYG view uses a
+                CSS style sheet to render the elements in &lt;oXygen> XML Editor.</p>
+            <p>While you are working on your document, you will probably find it easier to work in
+                    <indexterm>Tags On view</indexterm>, where you can clearly see the XML elements.
+                To switch to Tags On view, select <b>
+                    <indexterm>Author</indexterm> &gt; Tags with Attributes.</b>. You will then be
+                able to easily add new elements. You can also switch to the different views
+                available from the Author menu.</p>
+            <p>Below you can see how this file displays in &lt;oXygen> XML Editor in Author view in
+                    <i>No Tags</i> view and <i>Tags with attributes </i>view.</p>
+            <fig>
+                <figtitle>Tags with Attributes view </figtitle>
+                <image alt="Tags On View" href="../Output/helpmanual/Images/tagson.gif"/>
+            </fig>
+            <fig>
+                <figtitle>No Tags view </figtitle>
+                <image alt="No Tags view" href="../Output/helpmanual/Images/tagsoff.gif"/>
+            </fig>
+        </body>
+    </topic>
+    <topic>
+        <title>Front element</title>
+        <body>
+            <p>The front element Is the first element in the Helpmanual DTD. It contains the text
+                that will display on the first page. </p>
+            <p>The front element contains a required title element. Insert the title for your manual
+                or report inside the title element. The front element also contains some optional
+                elements:</p>
+            <ul>
+                <li>
+                    <b>author</b>: The author of the document.</li>
+                <li>
+                    <b>version</b>: The version of the document.</li>
+                <li>
+                    <b>date</b>: The date the document was completed.</li>
+                <li>
+                    <b>preface</b>: The preface element contains one or more p elements. Each p
+                    element contains a separate paragraph. You can use this element to add a brief
+                    introduction to your report or manual.</li>
+            </ul>
+        </body>
+    </topic>
+    <topic id="topic">
+        <title>Topic element</title>
+        <body>
+            <p>The primary element in the Helpmanual DTD is the topic element. When you write your
+                report or manual, you will use a separate topic element for each concept, task, or
+                topic. </p>
+            <p>After you create your XML file, you will publish the file to HTML. The topic element
+                generates a separate page when outputting to HTML, so after you publish your XML
+                file you will have a set of linked HTML pages. </p>
+            <p>If you want your content to display on a separate web page, you should insert a new
+                topic element.</p>
+            <p>The topic element contains the following elements:</p>
+            <ul>
+                <li>
+                    <b><indexterm term.entry="title element, topic">title</indexterm>
+                    </b>: The title element is required. Enter your page title in the title element.
+                    When you insert a topic element, you will see a number inside the title element.
+                    This numbering will help you to keep track of the order of the topics and the
+                    ways that they are nested. Note that the numbering will display in the output by
+                    default.</li>
+                <li>
+                    <b>body </b>- The body element is required. The body element contains the main
+                    elements for the page - paragraphs, lists, tables, etc. </li>
+                <li>
+                    <b>related-links</b> - The related-links element is optional. You can use this
+                    element to add a set of links to other topics.</li>
+                <li>
+                    <b>topic</b> - If you have a group of related topics, add a nested topic so that
+                    they appear in the TOC as indented topics. Nested topics show the hierarchical
+                    relationship in the table of contents.</li>
+            </ul>
+            <p>After you publish the XML file to HTML, you will see a Next and Previous navigation
+                link in the upper right corner and lower right corner that links the topics.</p>
+        </body>
+        <related-links>
+            <link id="bodyelement">Body element</link>
+        </related-links>
+        <topic id="nestedtopic">
+            <title>Nested topics</title>
+            <body>
+                <p>This topic is nested inside its parent topic. In Author view, the title for each
+                    topic level shows in a different font. The titles at the primary level show in a
+                    blue font. The titles in nested topics show as a black font. Each level in the
+                    hierarchy shows the topic title in a smaller font.</p>
+                <section>
+                    <title>Viewing nesting of topics</title>
+                    <p>You can verify the nesting of the topics using the Outline pane. The Outline
+                        pane shows you where you are in the hierarchy. In the graphic below, we can
+                        see that there is a topic nested in the highlighted topic. Note that each
+                        topic shows as indented when it is nested.</p>
+                    <fig>
+                        <image href="../Output/helpmanual/Images/outlinenesting.gif"
+                            alt="Outline View"/>
+                    </fig>
+                    <p>You can also see where you are in the hierarchy by looking in the upper left
+                        corner of the main Content pane. You will see there the path from the
+                        document root to the current element. For example, if we look at the path
+                        now, we can see that this element has the following path: </p>
+                    <fig>
+                        <image href="../Output/helpmanual/Images/breadcrumbs.gif" alt=""/>
+                    </fig>
+                    <p>Note how the current element has a blue line above it. In the graphic above,
+                        we can see that the p element is inside the body element, the body element
+                        is inside the topic element, the topic element is nested inside another
+                        topic element, and the topic element is inside the helpmanual element.</p>
+                </section>
+                <section>
+                    <title>Title numbering</title>
+                    <p>By default, when you transform to HTML, numbering will display in the titles.
+                        If you do not want the title numbers to display in the HTML output, you will
+                        need to add an attribute to the helpmanual element. If you add the
+                        topicnumbers attribute to the helpmanual element with a value of "no", the
+                        title numbering will not display in the HTML output.</p>
+                </section>
+                <section>
+                    <title>Linking to nested topics</title>
+                    <p>You can automatically add links to nested topics. These links will display
+                        only after you transform the XML file to HTML. If you want to display the
+                        links to nested topics in the output, add the class attribute to the parent
+                        topic element with a value of nestedtopiclinks. In the screenshot below, the
+                        links to the nested topics at the bottom of the topic display after applying
+                        the transformation in &lt;oXygen> XML Editor.</p>
+                    <fig>
+                        <image alt="Nested topic link"
+                            href="../Output/helpmanual/Images/autotoc.jpg"/>
+                    </fig>
+                </section>
+            </body>
+        </topic>
+    </topic>
+    <topic class="nonestedtopiclinks" id="bodyelement">
+        <title>Body element</title>
+        <body>
+            <p>The body element is located in the <indexterm>topic </indexterm>element. In the body
+                element, you will find the main block level elements such as paragraphs, lists and
+                images. The body element may contain the following elements, which can be inserted
+                in any order:</p>
+            <table width="600" border="1" cellpadding="5px" cellspacing="5px">
+                <caption>Available block elements in the body element</caption>
+                <tbody>
+                    <tr align="center" valign="top">
+                        <td>Element</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>fig</td>
+                        <td>A fig element contains an image, and an optional title and
+                            description</td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top" width="200px">p</td>
+                        <td>A paragraph</td>
+                    </tr>
+                    <tr>
+                        <td>ol</td>
+                        <td>Numbered list</td>
+                    </tr>
+                    <tr>
+                        <td>ul</td>
+                        <td>Bullet list</td>
+                    </tr>
+                    <tr>
+                        <td>lq</td>
+                        <td>Long quote - displays in a separate paragraph</td>
+                    </tr>
+                    <tr>
+                        <td>table</td>
+                        <td>Table</td>
+                    </tr>
+                    <tr>
+                        <td>note</td>
+                        <td>Use to display cautions, notes, and tips.</td>
+                    </tr>
+                    <tr>
+                        <td>dropdownlink</td>
+                        <td>Use to create drop-down text that shows only when a link is clicked</td>
+                    </tr>
+                    <tr>
+                        <td>section</td>
+                        <td>If your topic contains subsections and titles, use the section
+                            element</td>
+                    </tr>
+                    <tr>
+                        <td>pre</td>
+                        <td>A paragraph that shows the white space</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+        <related-links>
+            <link id="para">Paragraphs</link>
+            <link id="notes">Notes</link>
+            <link id="links">Drop-down links</link>
+            <link id="figure">Figures</link>
+            <link id="tables">Tables</link>
+            <link id="blocklists">Lists</link>
+            <link id="sections">Sections</link>
+        </related-links>
+        <topic id="para">
+            <title>Paragraphs</title>
+            <body>
+                <p>To insert a paragraph, use the p element. Note that paragraphs cannot be nested -
+                    you cannot insert a p tag inside a p tag. </p>
+                <section>
+                    <title>Long quotations</title>
+                    <p>The lq element is a special type of paragraph that is used for long quotes.
+                        The content of the lq element shows as indented on the left and right side.
+                        Here is a quote from Online-learning.com&apos;s Professional XML Authoring
+                        class:</p>
+                    <lq>Document designers and authors are motivated to use XML because it provides
+                        a means of describing documents, independent of medium. XML documents can be
+                        used for print, the Web or any other document medium. This flexibility
+                        encourages information system designers to use XML, as they can adopt one
+                        set of standards, tools and methods for processing documents, regardless of
+                        their various distribution targets.</lq>
+                </section>
+                <section>
+                    <title>Pre element</title>
+                    <p>The pre element preserves line breaks and white space, and it displays in a
+                        fixed width font. The paragraph below uses the pre element. Note how the
+                        text in the pre element shows the line breaks and white space:</p>
+                    <pre>In normal paragraphs, line breaks and extra white space do not display. 
+Empty spaces such as this space              are preserved in the pre element. 
+Also, the line breaks are preserved in the pre element.
+Note how the text inside this pre tag shows in a different font.</pre>
+                </section>
+            </body>
+        </topic>
+        <topic id="notes">
+            <title>Notes and cautions</title>
+            <body>
+                <p>If you want to insert notes, tips or cautions, you can use the note tag. The note
+                    tag has a <i>type</i> attribute with 3 possible values that specify the type of
+                    note: <i>note, tip or caution</i>. </p>
+                <p>When you add the type attribute, you will see that some text is added to the
+                    beginning of the note. The text "Note:", "Tip:", or "Caution:" will be added to
+                    the beginning. This will also appear in the HTML output files. </p>
+                <note type="note"> This is a note type of note. </note>
+                <note type="caution"> This is a caution type of note. </note>
+                <note type="tip"> This is a tip type of note. </note>
+                <p>After you apply the <xref id="stylesheet">stylesheets</xref>, you will see that
+                    the appropriate text is added to the note - i.e. "Note", "Tip", or
+                    "Caution".</p>
+            </body>
+        </topic>
+        <topic id="links">
+            <title>Drop-down links</title>
+            <body>
+                <p>Drop-down links allow you to compress related chunks of information in the same
+                    topic. By using a drop-down link, you can present a much cleaner look by
+                    displaying information only when the reader requests it.</p>
+                <p>If you create an FAQ topic or a Troubleshooting topic, you might it useful to use
+                    a drop-down link. If your topic contains a large number of FAQs or
+                    troubleshooting tips, you will find that the use of drop-down links will make it
+                    much easier for the user to locate information. In the example below, we present
+                    a few FAQs.</p>
+                <dropdownlink>
+                    <linktext>How do I insert a drop-down link?</linktext>
+                    <dropdowntext>
+                        <p>To insert a drop-down link, insert the dropdownlink tag. The dropdownlink
+                            tag contains two required elements: linktext and dropdowntext:</p>
+                        <ul>
+                            <li>
+                                <b>linktext:</b> Insert a short phrase or sentence that describes
+                                the information that will appear if the user clicks on the link. The
+                                content of the linktext element will show as a weblink after
+                                applying the stylesheets.</li>
+                            <li>
+                                <b>dropdowntext:</b> The content of this element will not initially
+                                display when you view it in the browser after publishing your XML
+                                file to HTML. The user will need to first click the link created by
+                                the linktext element before seeing the content of the dropdowntext
+                                element.</li>
+                        </ul>
+                    </dropdowntext>
+                </dropdownlink>
+                <dropdownlink>
+                    <linktext>Are there other uses for drop-down links besides FAQs?</linktext>
+                    <dropdowntext>
+                        <p>Yes. You can use dropdown links wherever you want to show some content
+                            only if the user clicks the link. For example, let&apos;s say you are
+                            writing an online manual, and there are two different methods to
+                            complete a specific task. You could insert two drop-down links for each
+                            method.</p>
+                    </dropdowntext>
+                </dropdownlink>
+            </body>
+        </topic>
+        <topic id="figure">
+            <title>Figures</title>
+            <body>
+                <note>All images <b>must</b> be inserted into the Output/helpmanual/Images directory
+                    inside your project directory. If you do not save your images in this directory,
+                    the images will not display after the transformation. Below is a screenshot of
+                    the directory that holds the images.</note>
+                <fig>
+                    <image href="../Output/helpmanual/Images/imagesfolder.png"
+                        alt="Directory for Images"/>
+                </fig>
+                <p>You can insert a graphic using either the <indexterm>image element</indexterm> or
+                    the fig element. The image element must be inserted inside a block element such
+                    as a paragraph, while the fig element is inserted as a block level element,
+                    outside of a paragraph. If you want your graphic to display on a separate line,
+                    use the fig element.</p>
+                <p>Below is a fig element. The fig element also can include an optional figtitle
+                    (figure title) and an optional desc element (description of the figure).</p>
+                <fig>
+                    <figtitle>Figure title</figtitle>
+                    <desc>Figure description</desc>
+                    <image alt="This is a figure" href="../Output/helpmanual/Images/tulip2.jpg"/>
+                </fig>
+                <note>If you are working in a group and the other group members are using XMLSpy,
+                    note that when you view XML files that were created in XMLSpy, you will not see
+                    the images in OxygenXML in Author mode. Your group members will also not be able
+                    to see your images when they open your XML file in XMLSpy. OxygenXML and XMLSpy
+                    treat images a little differently in Authentic and Author modes. This will not
+                    affect the images in the HTML output files. The images will display correctly
+                    from XML files created in both XMLSpy and OxygenXML. </note>
+                <p>The img element has 2 required attributes:</p>
+                <ul>
+                    <li>href - This attribute points to the graphic file name. Use the following
+                        format to insert the image: <i>../Output/helpmanual/Images/happy.gif. </i>
+                        (Remember to also save your XML file in the OLL/Source folder.) As long as
+                        you place your image first in the Output/helpmanual/Images directory inside
+                        your project, the image will display inside &lt;oXygen> XML Editor.</li>
+                    <li>alt - This attribute is a short description of the graphic.</li>
+                </ul>
+                <p>The image element also includes two optional attributes: width and height. You do
+                    not need to include these attributes for HTML output. </p>
+            </body>
+            <related-links>
+                <link id="inlinegraphics">Inline graphics</link>
+            </related-links>
+        </topic>
+        <topic id="tables">
+            <title>Tables</title>
+            <body>
+                <p>The table element allows you to present information in a table format. The tables
+                    below use some of the available attributes to format the table.</p>
+                <table width="550px" bgcolor="white" cellspacing="1" cellpadding="5" border="1">
+                    <caption>Available elements in a table</caption>
+                    <tbody>
+                        <tr valign="middle" height="30px" align="center" bgcolor="silver">
+                            <td>Elements </td>
+                            <td>Description</td>
+                        </tr>
+                        <tr height="80px" align="left" bgcolor="white">
+                            <td>paragraphs</td>
+                            <td>
+                                <p>This paragraph is inside a p tag.</p>
+                                <p>This paragraph is inside a second p tag.</p>
+                            </td>
+                        </tr>
+                        <tr bgcolor="#F2F2F2">
+                            <td>images</td>
+                            <td>
+                                <p>You can insert an image using the image tag.</p>
+                                <image alt="Table properties"
+                                    href="../Output/helpmanual/Images/happy.gif"/>
+                            </td>
+                        </tr>
+                        <tr bgcolor="white">
+                            <td>lists</td>
+                            <td>To insert a bullet list use the ul tag.<ul>
+                                    <li>Item one</li>
+                                    <li>Item two</li>
+                                </ul></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <section>
+                    <title>Available attributes for tables</title>
+                    <p>The table below lists the available attributes for a table. </p>
+                    <p>Note that the table below is aligned to the center of the page by setting the
+                        align property for the table element. </p>
+                    <table align="center" cellspacing="2" border="1" width="500px">
+                        <caption>Table attributes</caption>
+                        <tbody>
+                            <tr height="35px" bgcolor="lightgrey">
+                                <td align="center">Element</td>
+                                <td align="center">Available attributes</td>
+                            </tr>
+                            <tr>
+                                <td align="center">table</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <b>width</b> - table width. Example: &lt;table
+                                            width=&quot;500px&quot;&gt;</li>
+                                        <li>
+                                            <b>align:</b> Aligns the table to the left (default),
+                                            center, or right.</li>
+                                        <li>
+                                            <b>border</b> - Specifies if the table shows a border.
+                                            Example: &lt;table border=&quot;1&quot;&gt;</li>
+                                        <li>
+                                            <b>rules</b> - Specifies which rules (the lines in the
+                                            table) should display. Example: &lt;table
+                                            rules=&quot;rows&quot;&gt;</li>
+                                        <li>
+                                            <b>cellpadding</b> - Specifies the amount of space
+                                            between the table cell wall and the table cell content.
+                                            Example: &lt;table cellpadding=&quot;2px&quot;&gt;</li>
+                                        <li>
+                                            <b>cellspacing</b> - Specifies the amount of space
+                                            around the table cell walls. Example: &lt;table
+                                            cellspacing=&quot;5px&quot;&gt;</li>
+                                        <li>
+                                            <b>bgcolor</b> - Specifies the background color of a
+                                            table row or table cell. Example: &lt;table
+                                            bgcolor=&quot;lightgrey&quot;&gt;</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">table row, table column, table cell</td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <b>bgcolor</b> - Specifies the background color of a
+                                            table row or table cell. Example: &lt;table
+                                            bgcolor=&quot;lightgrey&quot;&gt;.</li>
+                                        <li>
+                                            <b>width</b> - Specifies the width of the table cell,
+                                            column or row. If you specify the width for one table
+                                            cell, all of the table cells in the same column will
+                                            have the same width. Example: &lt;td
+                                            width=&quot;50px&quot;&gt;.</li>
+                                        <li>
+                                            <b>height</b>: Specifies the height of a row or table
+                                            cell. Example: &lt;tr height=&quot;40px&quot;&gt;.</li>
+                                        <li>
+                                            <b>align</b> - Specifies the alignment of the content of
+                                            the table cell. Example: &lt;td
+                                            align=&quot;center&quot;&gt;.</li>
+                                        <li>
+                                            <b>valign</b> - Specifies the vertical alignment of the
+                                            content of the table cell. Example: &lt;td
+                                            valign=&quot;middle&quot;&gt;.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <title>Table elements</title>
+                    <table align="right" width="350px" bgcolor="white" cellspacing="1"
+                        cellpadding="5" border="1">
+                        <caption>Descriptions of table elements</caption>
+                        <tbody>
+                            <tr valign="middle" height="30px" align="center" bgcolor="silver">
+                                <td width="112">Table Elements </td>
+                                <td>Description</td>
+                            </tr>
+                            <tr bgcolor="white" align="left">
+                                <td width="112">table</td>
+                                <td>Each table goes in a table element.</td>
+                            </tr>
+                            <tr bgcolor="white" align="left">
+                                <td width="112">tr</td>
+                                <td>A row of table cells.</td>
+                            </tr>
+                            <tr bgcolor="white" align="left">
+                                <td width="112">td</td>
+                                <td>Each entry in your table goes inside a table cell.</td>
+                            </tr>
+                            <tr bgcolor="white" align="left">
+                                <td>th</td>
+                                <td>Table cell header</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>The Table elements table uses an align attribute with a value of
+                        &quot;right&quot;. If you align your table to the right, the text in the
+                        elements below the table will wrap around the table rather than display
+                        under the table (after you apply the transformation scenario).</p>
+                </section>
+            </body>
+        </topic>
+        <topic id="blocklists">
+            <title>Lists</title>
+            <body>
+                <p>You can use two types of lists in the Helpmanual DTD.</p>
+                <section>
+                    <title>Numbered lists</title>
+                    <p>Use the ol tag to create numbered lists. Note that each individual list item
+                        in the list should be enclosed by an li tag.</p>
+                    <ol>
+                        <li>Step 1</li>
+                        <li>Step 2</li>
+                        <li>Step 3</li>
+                    </ol>
+                </section>
+                <section>
+                    <title>Bullet lists</title>
+                    <p>Bullet lists use the ul tag. Like the ol tag, they also use the li tag for
+                        each individual list item inside the list. You can specify the type of
+                        bullet (circle, disc, or square) by specifying a value for the bullet
+                        attribute of the ul tag</p>
+                    <ul bullet="disc">
+                        <li>Grapes</li>
+                        <li>Bananas</li>
+                        <li>Oranges</li>
+                    </ul>
+                </section>
+            </body>
+        </topic>
+        <topic id="sections">
+            <title>Sections</title>
+            <body>
+                <p>If you want to insert subtitles in your topic, you will need to first insert the
+                    section element. The section element contains the same elements as the body
+                    element such as paragraphs, lists, and tables. But it has an additional element
+                    - the title element - that allows you to insert subtitles. If your topic
+                    describes several concepts or tasks, use the section element to group each
+                    concept or task.</p>
+                <section>
+                    <title>Section title</title>
+                    <p>This paragraph appears inside a section element. Note how the title above
+                        shows in a different font.</p>
+                </section>
+            </body>
+        </topic>
+    </topic>
+    <topic class="nestedtopiclinks">
+        <title>Inline elements</title>
+        <body>
+            <p>While a block element displays as a continuous block with a space above and below it,
+                an inline element appears inside a block element. You can use inline elements to do
+                things like format a word as bold or add a link to a website. The table below shows
+                the inline elements that are available inside block elements such as paragraphs,
+                lists, tables, and notes.</p>
+            <table width="600" border="1" cellpadding="3" cellspacing="3">
+                <tbody>
+                    <tr align="center" valign="top">
+                        <td>Element</td>
+                        <td>Description</td>
+                    </tr>
+                    <tr>
+                        <td>image</td>
+                        <td>An image</td>
+                    </tr>
+                    <tr>
+                        <td align="left" valign="top" width="200px">q</td>
+                        <td>An inline quotation</td>
+                    </tr>
+                    <tr>
+                        <td>b</td>
+                        <td>Bold text</td>
+                    </tr>
+                    <tr>
+                        <td>i</td>
+                        <td>Italic text</td>
+                    </tr>
+                    <tr>
+                        <td>xref</td>
+                        <td>Link to another topic</td>
+                    </tr>
+                    <tr>
+                        <td>weblink</td>
+                        <td>Link to a web page</td>
+                    </tr>
+                    <tr>
+                        <td>mcomment</td>
+                        <td>Used for marker's comments</td>
+                    </tr>
+                    <tr>
+                        <td>comment</td>
+                        <td>Used for internal comments - will not show in the HTML output</td>
+                    </tr>
+                    <tr>
+                        <td>indexterm</td>
+                        <td>Generates an index entry in the HTML output</td>
+                    </tr>
+                </tbody>
+            </table>
+        </body>
+        <topic>
+            <title>Comments</title>
+            <body>
+                <p>You can add two types of comments:</p>
+                <ul>
+                    <li>comment - The comment element is used to insert a hidden comment. These
+                        comments display in a red font in the Author view so that they are easier
+                        to view. When you convert your XML file to HTML, the comment will be hidden.
+                            <comment>This is a comment.</comment>
+                    </li>
+                    <li>mcomment - The mcomment element is used for marker&apos;s comments. These
+                        comments display in a green font in the Author view. When your assignment
+                        is submitted for marking, the marker will use this element to add comments.
+                        You do not need to use this element in your assignments.<mcomment>
+                            <p>This is a marker&apos;s comment.</p>
+                        </mcomment>
+                    </li>
+                </ul>
+            </body>
+        </topic>
+        <topic id="inlinegraphics">
+            <title>Inline graphics</title>
+            <body>
+                <p>While the fig element displays an image as a block element on a separate line,
+                    the image element can be used for inline graphics inside paragraphs, lists, and
+                    tables.</p>
+                <p>This inline image is nested inside a p tag. <image
+                        href="../Output/helpmanual/Images/happy.gif" alt="happy gif"/> . </p>
+                <p>The img element has 2 required attributes:</p>
+                <ul>
+                    <li>href - This attribute points to the graphic file name. Use the following
+                        format to insert the image: <i>../Output/helpmanual/Images/happy.gif </i> .
+                        Always make sure that the href attribute for the image starts with
+                            <i>../Output/helpmanual/Images/</i>, followed by the name of the graphic
+                        file. Do not use an absolute path to the graphic, such as
+                        c:/oll/Output/helpmanual/happy.gif. If you use an absolute path to the
+                        graphic (a path that points to a directory on your computer), then the
+                        graphic will not display after transforming to HTML.</li>
+                    <li>alt - This attribute is a short description of the graphic.</li>
+                </ul>
+                <p>
+                    <image alt="Table properties"
+                        href="../Output/helpmanual/Images/outlinenesting.gif"/> Note how this
+                    paragraph contains a large image inside a paragraph that also contains text. The
+                    large image affects the text that is on the same line as the image. If you want
+                    to insert a large graphic, insert the figure element so that the graphic
+                    displays on a separate line.</p>
+                <note>All images <b>must</b> be saved in the Output/helpmanual/Images directory
+                    inside your project directory. If you do not save your images in this directory,
+                    the images will not display after the transformation. Below is a screenshot of
+                    the directory that holds the images.</note>
+                <fig>
+                    <image href="../Output/helpmanual/Images/imagesfolder.png"
+                        alt="Directory for Images"/>
+                </fig>
+            </body>
+        </topic>
+        <topic id="inlinelinks">
+            <title>Links</title>
+            <body>
+                <p>You can insert links inside paragraphs, lists, and tables. Several types of links
+                    are available, including web links, links between topics, and glossary
+                    links.</p>
+                <section>
+                    <title>Web links</title>
+                    <p>Use the <indexterm>weblink element</indexterm> to create a <weblink
+                            href="http://www.online-learning.com">link to a Web site</weblink>. The
+                        weblink element has a required attribute:<i> href</i>. Enter the website URL
+                        in the <i>href </i>attribute. </p>
+                    <note type="caution"> Make sure that you include http:// at the beginning of the
+                        URL.</note>
+                </section>
+                <section>
+                    <title>Links between topics</title>
+                    <p>Use the xref element to link to another topic. The url of the xref element
+                        should be the same as the id attribute of the topic you are linking to. </p>
+   <p>In the example below, a topic element has an id attribute with a value of
+                        &quot;topic2&quot;. The p tag below is located in another topic element. The
+                        xref tag has an id attribute of &quot;topic2&quot;. After the XML file is
+                        published to HTML, the content in the xref tag will link to the first topic
+                        below.</p>
+                    <pre>&lt;topic id=&quot;topic2&quot;&gt;... &lt;/topic&gt; 
+						
+&lt;topic>&lt;title>Second topic>&lt;/title>&lt;body>
+&lt;p&gt;&lt;xref id=&quot;topic2&quot;&gt;Link to topic 2&lt;/xref&gt;&lt;/p&gt;
+&lt;/body>&lt;/topic> </pre>
+                    <p>The links below use the xref tag and they link to a topic that uses the same
+                        id attribute:</p>
+                    <p>
+                        <xref id="viewingtags">Authentic view </xref> - This first link has an id
+                        attribute of "viewingtags". This means that after we transform the XML
+                        document, a link will be created that links to the topic that also has an id
+                        attribute of "viewingtags".</p>
+                    <p>
+                        <xref id="topic">Topic element </xref> - This second link has an id
+                        attribute of "topic". This means that after we transform the XML document, a
+                        link will be created that links to the topic that also has an id attribute
+                        of "topic".</p>
+                </section>
+                <section>
+                    <title>Glossary links</title>
+                    <p>You may also use the xref element to link to a glossary definition. To link
+                        to a glossary definition, you must first enter the glossary term in the
+                        glossary element. Each individual glossary term needs an id attribute so
+                        that you can link to it. </p>
+                    <p>In the example below, the glossary contains a definition for the term
+                        &quot;topic&quot;. The glossentry element has an id attribute with a value
+                        of &quot;topicid&quot;. The xref tag below points to the glossary definition
+                        by using the value of the id attribute of the glossary definition. The
+                        content of the xref tag will display as a link to the glossary definition
+                        after publishing the XML file to HTML.</p>
+                    <pre>&lt;glossary&gt;
+  &lt;glossentry id=&quot;topicid&quot;&gt;&lt;glossterm&gt;topic&lt;/glossterm&gt;
+    &lt;glossdef&gt;A topic contains information on one task or concept.&lt;/glossdef&gt;
+ &lt;/glossentry&gt;
+&lt;/glossary&gt;
+
+&lt;p&gt;The primary element in the Helpmanual DTD is the 
+&lt;xref id=&quot;topicid&quot;&gt;topic&lt;/xref&gt; element.&lt;/p&gt;</pre>
+                    <p>This links to the <xref id="url">URL</xref> glossary definition.</p>
+                </section>
+            </body>
+            <related-links>
+                <link id="links">Drop-down links</link>
+            </related-links>
+        </topic>
+        <topic>
+            <title>Bold and Italics</title>
+            <body>
+                <p>You can use the b, i, and q elements to apply formatting to letters, words, or
+                    phrases.</p>
+                <ul>
+                    <li>
+                        <b>b </b>- The b element formats text as <b>bold text.</b>.</li>
+                    <li>
+                        <b>i </b>- The i element formats text as <i>italic text</i>.</li>
+                    <li>
+                        <b>q </b>- You can use the q element for <q>inline quotes</q>.</li>
+                </ul>
+            </body>
+        </topic>
+        <topic>
+            <title>Index </title>
+            <body>
+                <p>The style sheets create an index using the words or phrases that are marked up
+                    inside the content of the XML file. To add an entry to the index, insert an
+                    indexterm element inside a paragraph, list, or table. </p>
+                <p>In this paragraph, we have included two entries in the index:
+                        <indexterm>indexterm</indexterm> and <indexterm>Creating an
+                        index</indexterm>. Note that each phrase is located inside an indexterm
+                    element. If you <weblink href="indexpage.html">view the index</weblink>, you
+                    will see an entry for each index term that links back to this page.</p>
+                <section>
+                    <title>Modifying the entry in the index</title>
+                    <p>You may want to change the text that appears in an index entry . For example,
+                        let's say that you wanted to add an index entry for <indexterm>adding a
+                            topic</indexterm>. But you wanted the text "Topic, adding" to display in
+                        the index. You could do this by adding a term.entry attribute as below:</p>
+                    <pre>&lt;indexterm term.entry="Topic, adding">adding a topic&lt;/indexterm></pre>
+                    <p>When you add the term.entry attribute to the indexterm element above, the
+                        text "Topic, adding" will display in the index.</p>
+                </section>
+            </body>
+        </topic>
+    </topic>
+    <topic>
+        <title>Related links</title>
+        <body>
+            <p>If you want to add a group of links to the bottom of the topic, you can insert the
+                related-links element. The related-links element contains one or more link elements.
+                Each link element has an id attribute. The id attribute of the link element points
+                to the topic that you are linking to. </p>
+            <p>When you insert the related-links element, a link element will display. To add an
+                additional link element in Author view, you can just hit Enter on the keyboard and
+                choose the link element.</p>
+        </body>
+        <related-links>
+            <link id="inlinelinks">Links</link>
+        </related-links>
+    </topic>
+    <topic>
+        <title>Bibliography element</title>
+        <body>
+            <p>If you want to add a bibliography, insert the biblio element inside the back
+                element.</p>
+            <p>The biblio element can contain one or more custmbib elements. Enter each
+                bibliographic entry inside a custmbib element. </p>
+            <note type="note">When you insert the biblio element, the page title for the
+                bibliography page is automatically inserted.</note>
+        </body>
+    </topic>
+    <topic>
+        <title>Glossary element</title>
+        <body>
+            <p>If you want to add a glossary, insert the glossary element inside the back
+                element.</p>
+            <p>The glossary element can contain one or more glossentry elements. Enter each glossary
+                entry inside a glossentry element. The glossentry element has 2 child elements:</p>
+            <ul>
+                <li>
+                    <b>glossterm</b>: The glossary term. </li>
+                <li>
+                    <b>glossdef:</b> The glossary definition</li>
+            </ul>
+            <p>The glossentry element has an optional id attribute. Use the id attribute if you want
+                to link to the glossary definition from another topic element.</p>
+            <note type="note">When you insert the glossary element, the page title for the glossary
+                page is automatically inserted.</note>
+        </body>
+    </topic>
+    <back>
+        <biblio>
+            <custmbib>
+                <p>
+                    <weblink href="http://www.online-learning.com">Online-learning.com</weblink>
+                </p>
+            </custmbib>
+            <custmbib>
+                <p>Another bibliographic entry.</p>
+            </custmbib>
+        </biblio>
+        <glossary>
+            <glossentry id="stylesheet">
+                <glossterm>stylesheet</glossterm>
+                <glossdef>A CSS or XSLT stylesheet. A stylesheet determines the format of an
+                    element. For example, you can specify that an element should be bold or it
+                    should display with as a bullet list. </glossdef>
+            </glossentry>
+            <glossentry id="topicid">
+                <glossterm>topic</glossterm>
+                <glossdef>A topic contains information on one task or concept. </glossdef>
+            </glossentry>
+            <glossentry id="nestedtopicid">
+                <glossterm>Nested Topic</glossterm>
+                <glossdef>A nested topic is inside another topic. </glossdef>
+            </glossentry>
+            <glossentry id="url">
+                <glossterm>URL</glossterm>
+                <glossdef>Uniform Resource Locator. Specifies the location of a specific resource. A
+                    URL is divided into several parts. 1. The resource type - A web link uses the
+                    http:// to indicate a website. 2. The domain name - This is the name of the
+                    domain. An example is www.online-learning.com. 3. The file path - if you are
+                    linking to a specific page in a website, you can include the name of the file.
+                    For example: links.html. An example of a complete URL is
+                        <i>http://www.online-learning.com/contact.html.</i>
+                </glossdef>
+            </glossentry>
+            <glossentry id="transformations">
+                <glossterm>transformations</glossterm>
+                <glossdef>When you apply an XSLT style sheet to an XML file, you are transforming
+                    the XML file to another format. This is called a transformation. Often you will
+                    transform the XML file to HTML, but you might also transform to other formats
+                    such as PDF or RTF format.</glossdef>
+            </glossentry>
+        </glossary>
+    </back>
+</helpmanual>

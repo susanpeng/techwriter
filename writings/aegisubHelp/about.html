@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aegisub User Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" text = "text/css" href = styles/style.css>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wholepage">
+ <div align="center"><img src="./images/banner.png" width="600" height="100" alt=""/></div>
+ 
+ <script>
+  $(document).ready(function(){
+  $('#about').addClass('selected');
+});
+</script>
+
+ <div class="middle">
+	<div id="sidenav"></div>
+	<script>$("#sidenav").load("sidebar.html");</script>
+	
+<div class="main">
+
+    <H3>About Aegisub</H3>
+    <hr>
+    <p>Aegisub is a software program for adding subtitles to videos. It supports subtitle formats such as:</p>
+    <UL>
+      <LI value="1">Advansed Substation Alpha v4+ (.ass)</LI>
+      <LI value="2">Substation Alpha v4 (.ssa)</LI>
+      <LI value="3">SubRip Text (.srt)</LI>
+      <LI value="4">MPEG4 Timed Text (.ttxt)</LI>
+      <LI value="5">MicroDVD (.sub)</LI>
+      <LI value="6">Plain "dialog script" formatted text (.txt)</LI>
+    </UL>
+    
+    <p>The subtitles that are created in Aegisub can be saved in a .ass file. When you play the video, the media playing software combines the .ass file with the video file. Therefore, the subtitles can be displayed matching the corresponding audio. The workflow of adding subtitles to a video can be divided into three parts:</p>
+    
+    <p>The workflow of adding subtitles to a video can be divided into three parts:</p>
+    <OL>
+      <LI value="1">Editing subtitles</LI>
+      <LI value="2">Typesetting</LI>
+      <LI value="3">Timing</LI>
+    </OL>
+    <p><img src="images/workflow.png" width="400" height="80" alt=""/></p>
+    
+    <p><A href="./editingSubtitles.html"><strong>Editing subtitles</strong></A></p>
+    <p>You can create subtitles by opening an empty subtitle file. Then you type scripts in separate lines in the subtitle file. You can also load your scripts into a subtitle file from other word editing files. In the subtitle grid (multi-line subtitles display area), each line of subtitles is displayed with its line number, start time, end time, and CPS (characters per second). A red CPS in a line tells you that too many characters are displayed in a second, so the audience may not have enough time to read the subtitles while watching the video. When you see the red CPS in a subtitle line, you should consider making the line shorter. </p>
+    <p><A href="./workingWithStyles.html"><strong>Typesetting</strong></A></p>
+    <p>Typesetting is to design the font size, font family, shadow, angle, and background of subtitles.</p>
+    <p>Typesetting is very important because it affects the readability of subtitles. For example, if the color of subtitles is too close to the background color, the audience can not see the subtitles clearly. Then subtitles lose the purpose; therefore, you need to design the typesetting to enhance the readability of subtitles.</p>
+      <p>Good typesetting not only helps audience understand the scripts but also adds aesthetic visual effects to a video.</p>
+     <p>Aegisub has plenty of attributes for you to attain desired visual effects for subtitles.</p>
+    <p><A href="./timingSubtitleToAudio.html"><strong>Timing</strong></A></p>
+    <p>Timing is important because it lets audience see the subtitles at the right time point. Subtitles need to be displayed matching the actor’s speech. Each line of subtitles should be displayed between the correct start and end time points.</p>
+    <p>To match the subtitles to the audio, you first play the audio in the audio area to locate the start and end points of a sentence. Then you associate the start and end points to a corresponding subtitle line. After you have assigned the start and end time points to a subtitle line, you need to double check the CPS to ensure that it is not red.</p>
+        
+    <p align="right"> <a href="./index.html"><img src="./images/arrowleft.png" width="30" height="20" alt="" /></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./mainScreen.html"><img src="./images/arrowright.png" width="30" height="20" alt="" /></a></p>
+	
+	
+ </div>
+ </div>
+ <div id="footer"><p>Copyright©2022 Susan All Rights Reserved.</p></div>
+</div>
+</body>
+</html>

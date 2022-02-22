@@ -1,0 +1,14 @@
+<!doctype html>
+
+
+<h1 align="center">Windows Server 2016 Disappears From Network List</h1>
+	<p align="center">May 23, 2017</p>
+		<p>Yesterday I found all computers on company network couldn’t see the server. All the computers are running windows 10, and the server is installed MS Server 2016 standard edition. All computers were able to see the server before yesterday.
+
+	<p>Each computers and server could ping each other without problem, which meant the network connection was good.
+
+	<p>After several failed attempts to solve the problem, I fixed the problem using the following procedure.
+
+	<p>Go to Services and scroll down to locate the service named Function Discovery Resource Publication service. I found that this service was not running. After I  started it, the server appeared on the network list of file explorer for all computers.
+
+	<p>The reason is that sometimes, the Function Discovery Resource Publication service might be stopped after windows updating. Maybe it is for the security consideration.

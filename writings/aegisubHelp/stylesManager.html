@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aegisub User Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" text = "text/css" href = styles/style.css>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wholepage">
+ <div align="center"><img src="./images/banner.png" width="600" height="100" alt=""/></div>
+ 
+ <script>
+      $(document).ready(function(){
+      $('#manager').addClass('selected');
+    });
+    </script>
+
+ <div class="middle">
+	<div id="sidenav"></div>
+	<script>$("#sidenav").load("sidebar.html");</script>
+	
+<div class="main">
+
+<H3>The Styles Manager</H3>
+<hr>
+<p>In Aegisub, you use Styles Manager to organize, save, edit, and delete styles. The Styles Manager organizes all stored styles into groups. Each group is called a storage.</p>
+<p>To open the Styles Manager, you go to main menu and click <strong>Subtitles | Style Manager...</strong>. The Styles Manager displays.</p>
+<p> <img src="images/styleManager.png" width="450" height="330" alt=""/></p>
+<p>The Styles Manager has three main areas: </p>
+
+      <p><img src="images/1.png" width="18" height="18" alt=""/> Catalog of available storages: You can select a storage from available storages by clicking the down-arrow. You can also create a new storage or delete an exiting storage by clicking <strong>New</strong> or <strong>Delete</strong> button.</p>
+      <p><img src="images/2.png" width="18" height="18" alt=""/> Storage: All styles in the selected storage display under Storage. You can create a new style to add to the storage, edit an existing style in the storage, or delete an existing style from the storage. You can copy an existing style from storage to Current script area.</p>
+      <p><img src="images/3.png" width="18" height="18" alt=""/> Current script: This area keeps your current styles. Only styles in the Current script area display in the drop-down style list when you edit subtitles; therefore, you have to move at least one style from storage to the Current script area before you can use it to edit subtitles.<br>
+      Click <strong>New</strong> to create a new style.<br>
+      Click <strong>Edit</strong> to edit an existing style.<br>
+      Click <strong>Delete</strong> to delete an existing style from the Current script area. <br>
+      You can copy your newly created style or edited style to the storage by clicking <strong>&lt;- Copy to Storage</strong> button. You can also import a style from an existing scripts file.</p>
+<p>There are five buttons on the left side of storage (and Current script area). The first four buttons allow you to move one style up, down, to the top, and to the bottom. The lowest button allows you to sort styles by name alphabetically.</p>
+<p>When you finish your operations in the Styles Manager, click <strong>Close</strong> button to close the Styles Manager. </p>
+
+<p align="right"> <a href="./workingWithStyles.html"><img src="./images/arrowleft.png" width="30" height="20" alt="" /></a>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./styleEditor.html"><img src="./images/arrowright.png" width="30" height="20" alt="" /></a></p>
+	
+ </div>
+ </div>
+ <div id="footer"><p>Copyright©2022 Susan All Rights Reserved.</p></div>
+</div>
+</body>
+</html>

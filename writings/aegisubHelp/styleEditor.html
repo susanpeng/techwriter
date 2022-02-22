@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aegisub User Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" text = "text/css" href = styles/style.css>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wholepage">
+ <div align="center"><img src="./images/banner.png" width="600" height="100" alt=""/></div>
+
+ <script>
+	$(document).ready(function(){
+	$('#editor').addClass('selected');
+  });
+  </script>
+
+ <div class="middle">
+	<div id="sidenav"></div>
+	<script>$("#sidenav").load("sidebar.html");</script>
+	
+<div class="main">
+
+<H3>The Style Editor</H3>
+<hr>
+<p>You use Style Editor to create a new style or edit an existing style. The Style Editor has a WYSIWYG (what you see is what you get) user interface. When you change the parameters of a style, you can see exactly what your subtitles look like.</p>
+<p>To open the Style Editor, you need to open the Styles Manager first. Then you click the <strong>New</strong> button or <strong>Edit</strong> button in the Styles Manager.</p>
+<p>The style editor displays.</p>
+<p><img src="images/styleEditor.png" width="460" height="330" alt=""/></p>
+<p>
+  Style Name: You type your style name in the <strong>Style Name</strong> field. You may use different styles for the beginning, the ending, or voice over for your video. You can give meaningful names for different styles.</p>
+<p>Font: You select the font family and font size of the style.</p>
+<p>Check boxes: You can set the subtitles to be bold, italic, underline, or strikeout by checking the boxs beside <strong>Bold</strong>, <strong>Italic</strong>, <strong>Underline</strong>, or <strong>Strikeout</strong>.</p>
+<p>Margin and alignment: You can define the position and margins for subtitles on the video.</p>
+<p>Outline: You define the width for the outline and shadow. You can also select weather the subtitles are opaque or not.</p>
+<p>Miscellaneous: You can change the scale in X direction, the scale in Y direction, and the angle of the subtitle text. You can also set the space between characters. </p>
+<p>Encoding: You can select character encoding format from the drop-down list. (note: A character encoding is a way to convert text data into binary numbers.)</p>
+<p>Preview area: You can see the exact result when you change parameters in the Style Editor.In the text field under the preview area, you can type the sample subtitles. The color rectangular beside the text field is for you to set the background color for the sample subtitles.</p>
+<p>Click <strong>Cancel</strong> to close the Style Editor without saving your changes.</p>
+<p>Click <strong>Apply</strong> to apply your changes to subtitle lines that use the style.</p>
+<p>Click <strong>OK</strong> to save your changes and close the Style Editor.</p>
+	   <p align="right"> <a href="./stylesManager.html"><img src="./images/arrowleft.png" width="30" height="20" alt="" /></a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./designStyle.html"><img src="./images/arrowright.png" width="30" height="20" alt="" /></a></p>
+	
+ </div>
+ </div>
+ <div id="footer"><p>Copyright©2022 Susan All Rights Reserved.</p></div>
+</div>
+</body>
+</html>

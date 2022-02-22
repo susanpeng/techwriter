@@ -1,0 +1,1181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE helpmanual SYSTEM "../DTDs/manual.dtd">
+<?xml-stylesheet type="text/xsl" href="../xslt/helpmanual.xsl"?>
+<?altova_sps ..\DTDs\helpmanual.sps?>
+<?altova_xslfo ..\xslt\helpmanualpdf.xslt?>
+<helpmanual topicnumbers="yes">
+	<front>
+		<title>Bookshelf Editor User&apos;s Manual</title>
+		<author>Walter Scott, Lilia Medvedyeva, Yulin Peng</author>
+		<version>1.0</version>
+		<date>11 November 2013</date>
+	</front>
+	<topic class="nestedtopiclinks">
+		<title>Introduction</title>
+		<body/>
+		<topic>
+			<title>What is the Bookshelf Editor</title>
+			<body>
+				<p>The <indexterm term.entry="Bookshelf Editor 1.1, about">Bookshelf Editor 1.1</indexterm> is a compact application designed to help you to store, organize and manage links to on-line content.</p>
+				<p>The user interface has a familiar look of “shelves” filled with “books” representing the URL links to your favorite websites. Locating and accessing your favorite website is as easy and convenient as picking a book from a shelf. All you need to do is to browse the book titles on your virtual shelves and click the book(s) you want to &quot;read&quot;.</p>
+				<p>The Bookshelf Editor provides you with a variety of convenient built-in tools that help you to create your own design and arrangement of shelves and books. The Bookshelf Editor enables you to organize your books in a manner that makes sense to you. Using the Bookshelf Editor you can:</p>
+				<ul>
+					<li>Create multiple shelves of various sizes</li>
+					<li>Group books on related topics by placing them on different shelves</li>
+					<li>Change the presentation in each individual shelf by adding spaces between books</li>
+					<li>Add titles to your books</li>
+					<li>Change book appearance</li>
+				</ul>
+				<p>The Bookshelf Editor also enables you to export your project in XML or HTML. Once you have exported your bookshelf, you can view it on any computer; you can even email it to a friend.</p>
+				<p>You can create and export as many bookshelves as you want and dedicate each to a separate project or topic. In addition, you can carry your collection in a flash drive and access it from any web-enabled computer. </p>
+			</body>
+		</topic>
+		<topic>
+			<title>System Requirements</title>
+			<body>
+				<p>The following minimum <indexterm term.entry="system requirements">system requirements</indexterm> apply to the Bookshelf Editor application:</p>
+				<table border="0">
+					<caption/>
+					<tbody>
+						<tr>
+							<td width="214">Operation System:</td>
+							<td width="602">Windows</td>
+						</tr>
+						<tr>
+							<td width="214">Monitor:</td>
+							<td width="602">800 x 600 or higher resolution with 256 or more colors</td>
+						</tr>
+						<tr>
+							<td width="214">Internet:</td>
+							<td width="602">Any Internet connection, although higher-speed connections are preferable</td>
+						</tr>
+						<tr>
+							<td width="214">Browser:</td>
+							<td width="602">Any web browser</td>
+						</tr>
+					</tbody>
+				</table>
+				<p/>
+			</body>
+		</topic>
+		<topic>
+			<title>How to use the manual</title>
+			<body>
+				<p>
+					<indexterm term.entry="User's Manual, using">This User&apos;s Manual</indexterm> contains the detailed information you need to know to use Bookshelf Editor.</p>
+				<p>The manual is written with the assumption that you are familiar with how to browse the Internet and perform basic Windows functions.</p>
+				<p>A mini flow-chart with a right angle bracket, such as <b>File </b>
+					<b>&gt;</b>
+					<b> Save</b>, indicates a series of menu choices.</p>
+				<p>You can navigate through the manual using the hyper-links and buttons in following standard aids and features:</p>
+				<ul>
+					<li>
+						<b>Table of Contents</b>
+						<p>Presents a hierarchical list of sections and topics and links them to their content.</p>
+					</li>
+					<li>
+						<b>Navigation arrows</b>
+						<p>Enable you to move one page back or forward.</p>
+					</li>
+					<li>
+						<b>Browser navigation buttons</b>
+						<p>Enable you to move one screen back or forward in your session history.</p>
+					</li>
+					<li>
+						<b>Breadcrumbs</b>
+						<p>Show your location in the hierarchy of the manual and provides hyper-links to higher-level sections.</p>
+					</li>
+					<li>
+						<b>Index</b>
+						<p>Maps the specific words, expressions, and terms used in the manual to the pages where you can find related material.</p>
+					</li>
+				</ul>
+			</body>
+		</topic>
+		<topic>
+			<title>Copyright and Contact information</title>
+			<body>
+				<p>
+					<indexterm term.entry="copyright information">Bookshelf Generator copyright WatAGE Inc.</indexterm>
+				</p>
+				<p>Not for resale of redistribution.</p>
+				<p>Created by Paul Ullrich 2001.</p>
+				<p>This program uses independent JPEG Group&apos;s JPEG Library Software (CJPEG.EXE), Copyright 1994-1996.</p>
+				<p>
+					<b>
+						<indexterm term.entry="contact information">Contact</indexterm>
+					</b>
+				</p>
+				<p>For Technical support, contact the PTW course instructor Kitty Bucsko.</p>
+				<p>All requests for technical assistance must be directed through the following email address:</p>
+				<p>
+					<weblink href="">kbucsko@online-learning.com</weblink>
+				</p>
+			</body>
+		</topic>
+	</topic>
+	<topic class="nestedtopiclinks">
+		<title>Learning the Graphical User Interface (GUI)</title>
+		<body/>
+		<topic id="opening_screen">
+			<title>The opening screen</title>
+			<body>
+				<p>Bookshelf Editor 1.1 is opened to the <indexterm>main screen</indexterm>.</p>
+				<p>The main components of the main screen are:</p>
+				<ul>
+					<li>
+						<xref id="menubar">The Menu Bar</xref>
+					</li>
+					<li>
+						<xref id="toolpanel">The Tool Panel</xref>
+					</li>
+					<li>
+						<xref id="workarea">The Work Area</xref>
+					</li>
+				</ul>
+				<fig>
+					<figtitle>The Bookshelf Editor Main Screen</figtitle>
+					<image href="opening_screen.png" alt="opening screen"/>
+				</fig>
+			</body>
+		</topic>
+		<topic id="menubar" class="nestedtopiclinks">
+			<title>The Menu Bar</title>
+			<body>
+				<fig>
+					<image href="gui_mainmenu.png" alt="main menu"/>
+				</fig>
+			</body>
+			<topic>
+				<title>File Menu</title>
+				<body>
+					<p>The following shows the open <b>
+							<indexterm term.entry="File menu">File</indexterm>
+						</b> menu and explains its features.</p>
+					<fig>
+						<image href="file_menu.png" alt="File menu"/>
+					</fig>
+					<p>The <b>File</b> menu consists of the following Bookshelf Editor commands:</p>
+					<ul>
+						<li>
+							<b>New Bookshelf</b>
+							<p>Creates a <indexterm>new bookshelf</indexterm> file.</p>
+						</li>
+						<li>
+							<b>Open</b>
+							<p>
+								<indexterm term.entry="open file">Opens</indexterm> an existing bookshelf file.</p>
+						</li>
+						<li>
+							<b>Save</b>
+							<p>
+								<indexterm term.entry="save file">Saves</indexterm> the current bookshelf file.</p>
+						</li>
+						<li>
+							<b>Save As</b>
+							<p>Save the current bookshelf file with a different name.</p>
+						</li>
+						<li>
+							<b>Export Bookshelf</b>
+							<p>Export the current bookshelf project to various file formats.</p>
+						</li>
+						<li>
+							<b>Exit</b>
+							<p>
+								<indexterm term.entry="exit">Exits</indexterm> Bookshelf Editor.</p>
+						</li>
+					</ul>
+				</body>
+			</topic>
+			<topic>
+				<title>View Menu</title>
+				<body>
+					<p>The following shows the open <b>
+							<indexterm term.entry="View menu">View</indexterm>
+						</b> menu and explains its features.</p>
+					<fig>
+						<image href="view_menu.png" alt="View menu"/>
+					</fig>
+					<p>The <b>View</b> menu consist of the following single command:</p>
+					<ul>
+						<li>
+							<b>Toolbar</b>
+							<p> This command is permanently enabled and cannot be accessed from the <b>View</b> menu.</p>
+						</li>
+					</ul>
+				</body>
+			</topic>
+			<topic>
+				<title>Bookshelf Menu</title>
+				<body>
+					<p>The following shows the open <b>
+							<indexterm term.entry="Bookshelf menu">Bookshelf</indexterm>
+						</b> menu and explains its features.</p>
+					<fig>
+						<image href="bookshelf_menu.png" alt="Bookshelf menu"/>
+					</fig>
+					<p>The <b>Bookshelf</b> menu consists of the following Bookshelf Editor commands:</p>
+					<ul>
+						<li>
+							<b>Design Properties</b>
+							<p>Opens the <b>Design Properties</b> dialog box. For details, see <xref id="design_properties">Design Properties</xref>.</p>
+						</li>
+						<li>
+							<b>Shelf Properties </b>
+							<p>Opens the <b>Shelf Properties</b> dialog box. For details, see <xref id="shelf_props">Shelf Properties</xref>.</p>
+						</li>
+						<li>
+							<b>Add New Shelf</b>
+							<p>Opens the <b>Shelf Properties</b> dialog box. For details, see <xref id="shelf_props">Shelf Properties</xref>.</p>
+						</li>
+						<li>
+							<b>Delete Selected Shelf</b>
+							<p>Deletes the selected shelf.</p>
+						</li>
+						<li>
+							<b>ML Viewer</b>
+							<p>Allows you to view your bookshelf either in XML or HTML. For details, see <xref id="ml_viewer">ML Viewer</xref>.</p>
+						</li>
+					</ul>
+				</body>
+			</topic>
+			<topic>
+				<title>Object Menu</title>
+				<body>
+					<p>The following shows the open <b>
+							<indexterm term.entry="Object menu">Object</indexterm>
+						</b> menu and explains its features.</p>
+					<fig>
+						<image href="object_menu.png" alt="Object menu"/>
+					</fig>
+					<p>The <b>Object</b> menu consists of the following Bookshelf Editor commands:</p>
+					<ul>
+						<li>
+							<b>Insert</b>
+							<p>Allows you to add <b>Default Book</b>, <b>Wide Book</b>, or <b>Space</b> to the selected shelf.</p>
+						</li>
+						<li>
+							<b>Book Properties</b>
+							<p>Opens either the <b>Object Properties</b> dialog box or the <b>Space Properties</b> dialog box, where you can modify the properties of the selected book or space, respectively.</p>
+						</li>
+						<li>
+							<b>Move Left</b>
+							<p>Moves the selected book or space one position to the left on the shelf.</p>
+						</li>
+						<li>
+							<b>Move Right</b>
+							<p>Moves the selected book or space one position to the right on the shelf.</p>
+						</li>
+						<li>
+							<b>Delete</b>
+							<p>Removes the selected book or space from the shelf.</p>
+						</li>
+					</ul>
+				</body>
+			</topic>
+			<topic>
+				<title>Help Menu</title>
+				<body>
+					<p>The following shows the open <b>
+							<indexterm term.entry="Help menu">Help</indexterm>
+						</b> menu and explains its features.</p>
+					<fig>
+						<image href="help_menu.png" alt="Help menu"/>
+					</fig>
+					<p>The <b>Help</b> menu consists of the following Bookshelf Editor command:</p>
+					<ul>
+						<li>
+							<b>About Bookshelf Editor</b>
+							<p>Opens the <b>About WatAGE Bookshelf Generator</b> dialog box, which provides legal and copyright information.</p>
+							<fig>
+								<image href="About_bookshelf_editor_dialog_box.png" alt="About bookshelf editor dialog box"/>
+							</fig>
+						</li>
+					</ul>
+				</body>
+			</topic>
+		</topic>
+		<topic class="nestedtopiclinks" id="toolpanel">
+			<title>The Tool Panel</title>
+			<body>
+				<fig>
+					<image href="tool_panel.png" alt="tool panel"/>
+				</fig>
+			</body>
+			<topic>
+				<title>Bookshelf Information</title>
+				<body>
+					<p>The <b>
+							<indexterm term.entry="Tool Panel, Bookshelf">Bookshelf</indexterm>
+						</b> group box of the <indexterm term.entry="tool panel">Tool Panel</indexterm> is shown below.</p>
+					<fig>
+						<image href="Bookshelf_group_box.png" alt="Bookshelf group box"/>
+					</fig>
+					<p>The <b>Bookshelf</b> group box comprises the following:</p>
+					<ul>
+						<li>The title of your bookshelf</li>
+						<li>The total number of shelves</li>
+						<li>The number of the currently selected shelf</li>
+					</ul>
+				</body>
+			</topic>
+			<topic id="design_properties">
+				<title>Design Properties</title>
+				<body>
+					<p>When you click <image href="tool_panel_des_prop.png" alt="Tool Panel Design Prop"/> in the Tool Panel, the <b>
+							<indexterm>Design Properties</indexterm>
+						</b> dialog box is opened. </p>
+					<fig id="design_prop2">
+						<image href="design_properties_dialog_box.png" alt="Design properties dialog box"/>
+					</fig>
+					<p>In the <b>Design Properties</b> dialog box, you can modify bookshelf properties and view bookshelf statistics.</p>
+				</body>
+			</topic>
+			<topic id="shelf_props">
+				<title>Shelf Properties</title>
+				<body>
+					<p>When you click <image href="tool_panel_shelf_prop.png" alt="Tool Panel Shelf Prop"/> in the Tool Panel, the <b>
+							<indexterm>Shelf Properties</indexterm>
+						</b> dialog box is opened.</p>
+					<fig>
+						<image href="Shelf_properties_dialog_box.png" alt="Shelf properties dialog box"/>
+					</fig>
+					<p>In the <b>Shelf Properties</b> dialog box, you can modify shelf width and justification.</p>
+				</body>
+			</topic>
+			<topic>
+				<title>Book Properties</title>
+				<body>
+					<p>When you select a book and click <image href="tool_panel_book_prop.png" alt="Tool Panel Book Prop"/> in the Tool Panel, the <b>
+							<indexterm>Object Properties</indexterm>
+						</b> dialog box is opened. </p>
+					<p>
+						<image href="Object_properties_dialog_box.png" alt="Object properties dialog box"/>
+					</p>
+					<p>In the <b>Object Properties</b> dialog box, you can specify the style, color, title, URL link, and view the object information for the selected book.</p>
+				</body>
+			</topic>
+			<topic id="ml_viewer">
+				<title>ML Viewer</title>
+				<body>
+					<p>When you click <image href="view_xml.png" alt="View Xml"/> or <image href="view_html.png" alt="view html"/> in the Tool Panel, the <b>watAGE <indexterm>ML Viewer</indexterm> Application</b> dialog box is opened, displaying the current bookshelf in XML or HTML, respectively.</p>
+					<fig>
+						<image href="Watage_dialog_box.png" alt="Watage dialog box"/>
+					</fig>
+				</body>
+			</topic>
+			<topic>
+				<title>Object Link</title>
+				<body>
+					<p>The <b>Object Link</b> field displays the <indexterm term.entry="object link">link</indexterm> of the selected book.</p>
+					<fig>
+						<image href="Object_link.png" alt="Object link"/>
+					</fig>
+				</body>
+			</topic>
+			<topic>
+				<title>Object Palette</title>
+				<body>
+					<p>The <b>
+							<indexterm>Object Palette</indexterm>
+						</b> allows you to add the following objects to the currently selected shelf:</p>
+					<ul>
+						<li>Default book</li>
+						<li>Wide book</li>
+						<li>Space</li>
+					</ul>
+					<fig>
+						<image href="Object_palette.png" alt="Object palette"/>
+					</fig>
+				</body>
+			</topic>
+		</topic>
+		<topic id="workarea">
+			<title>The Work Area</title>
+			<body>
+				<p>The <indexterm>Work Area</indexterm> displays your Bookshelf configuration.</p>
+				<fig>
+					<image href="Work_area.png" alt="Work area"/>
+				</fig>
+				<p>When you add a new shelf, book, or space it appears in the Work Area. </p>
+				<p>The red arrow indicates a currently selected shelf. </p>
+				<p>The white border indicates a currently selected book or space.</p>
+			</body>
+		</topic>
+	</topic>
+	<topic class="nestedtopiclinks">
+		<title>Downloading and Installing the Bookshelf Editor</title>
+		<body/>
+		<topic>
+			<title>Downloading the software</title>
+			<body>
+				<p>To <indexterm term.entry="Bookshelf Editor, downloading">download Bookshelf Editor</indexterm> 1.1:</p>
+				<ol>
+					<li>On web page http://courses.online-learning.com, log in to your course page.</li>
+					<li>Under <b>Navigation</b>, click <b>My course</b>.</li>
+					<li>Click the name of your course.</li>
+					<li>In the course information page, click the <b>Course downloads</b> link.</li>
+					<li>On the <b>Course downloads</b> page, click <b>BookshelfEditor11.exe</b>.<p>The application file <b>BookshelfEditor11.exe</b> is downloaded to your Downloads directory.</p>
+						<fig>
+							<image href="../images/download_3.png" alt=""/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Installing the software</title>
+			<body>
+				<p>To <indexterm term.entry="Bookshelf Editor, installing">install Bookshelf
+Editor</indexterm> 1.1:</p>
+				<ol>
+					<li>In the <b>Downloads</b> directory, locate <b>BookshelfEditor11.exe</b> and
+double-click <b>BookshelfEditor11.exe</b>.</li>
+					<li>In the <b>Security Warning</b> dialog box, click <b>Run</b>. <fig>
+							<image href="../images/install_1.png" alt=""/>
+						</fig>
+					</li>
+					<li>In the <b>Bookshelf Editor 1.1 Install</b> dialog box, click <b>Next</b>.<fig>
+							<image href="../images/install_2.png" alt=""/>
+						</fig>
+					</li>
+					<li>In the next dialog box that opens, select <b>I have read this ... </b> and click <b>Next</b>. <fig>
+							<image href="../images/install_3.png" alt=""/>
+						</fig>
+					</li>
+					<li>In the next dialog box that opens, click <b>OK</b>.<fig>
+							<image href="../images/install_5.png" alt=""/>
+						</fig>
+						<p>Bookshelf Editor 1.1 is now installed on your computer.</p>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Opening the software</title>
+			<body>
+				<p>To <indexterm term.entry="Bookshelf Editor, opening">open the Bookshelf
+Editor</indexterm> 1.1:</p>
+				<ol>
+					<li>Double-click the <b>BookshelfEditor 1.1</b> icon on your desktop.<fig>
+							<image href="../images/open_1.png" alt=""/>
+						</fig>
+					</li>
+					<li>On the <b>Student Bookshelf Editor</b> window, click <b>Agree</b>.<fig>
+							<image href="../images/open_2.png" alt=""/>
+						</fig>
+						<p>Bookshelf Editor 1.1 displays the <xref id="opening_screen">opening screen</xref>.</p>
+						<fig>
+							<image href="../images/open_3.png" alt=""/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+	</topic>
+	<topic class="nestedtopiclinks">
+		<title>Getting Started with Bookshelf Editor</title>
+		<body/>
+		<topic>
+			<title>Starting a new file</title>
+			<body>
+				<p>To <indexterm term.entry="bookshelf file, starting">start a new bookshelf
+file</indexterm>:</p>
+				<ol>
+					<li>From the <b>File</b> menu, click <b>New Bookshelf</b>.<fig>
+							<image href="../images/file_menu_new.png" alt=""/>
+						</fig>
+						
+					</li>
+					<li>In the <b>New Bookshelf Conformation</b> dialog box, click <b>Yes</b>.<fig>
+							<image href="../images/file_1.png" alt=""/>
+						</fig>
+						<p>The existing bookshelf is erased. A new empty bookshelf is
+displayed in the Work Area.</p>
+						<fig>
+							<image href="../images/file_2.png" alt=""/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Opening an existing file</title>
+			<body>
+				<p>To <indexterm term.entry="bookshelf file, opening ">open an existing bookshelf
+file</indexterm>:</p>
+				<ol>
+					<li>From the <b>File</b> menu, click <b>Open</b>.<fig>
+							<image href="../images/file_menu_open.png" alt=""/>
+						</fig>
+					</li>
+					<li>Navigate to the directory where your bookshelf file is saved.</li>
+					<li>Choose your bookshelf file and click <b>Open</b>.<fig>
+							<image href="../images/file_4_1.png" alt=""/>
+						</fig>
+						<p>The bookshelf in the existing file is displayed in the Work Area, and
+related information is displayed in the Tool Panel.</p>
+						<fig>
+							<image href="../images/file_5.png" alt=""/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic class="nestedtopiclinks">
+			<title>Assigning design properties</title>
+			<body/>
+			<topic>
+				<title>Adding a Bookshelf Title</title>
+				<body>
+					<p>
+						<indexterm term.entry="bookshelf title, adding">To add a bookshelf
+							title</indexterm>, do one of the following:</p>
+					<ul>
+						<li>
+							Add from the <b>Menu</b>:
+							<ol>
+								<li>From the <b>Bookshelf </b>Menu, click <b>Design Properties</b>.<fig><image href="../images/designProperties_1.png" alt=""/></fig></li>
+								<li>In the <b>Bookshelf Title</b> box, type the bookshelf title.<fig><image href="../images/designPropertiesWin_1.png" alt=""/></fig></li>	
+							</ol></li>
+						<li>Add from <b>Tool Panel</b>:<ul><li>In the <b>Bookshelf</b> group box in the Tool Panel, type the bookshelf title in the <b>Title</b> text box.<fig>
+								<image href="../images/file_7.png" alt=""/>
+							</fig>
+							</li></ul></li></ul>
+				
+					
+				</body>
+			</topic>
+			<topic>
+				<title>Viewing the Construction</title>
+				<body>
+					<p>To <indexterm term.entry="construction, viewing">view the
+construction</indexterm> of the bookshelf:</p>
+					<ol>
+						<li>Do one of the following:<ul>
+							<li>From the Tool Panel, click <b>Design Properties</b>.<fig>
+								<image href="../images/file_toolpanel.png" alt=""/>
+							</fig>
+							</li>
+								<li>From the <b>Bookshelf</b> menu, click <b>Design Properties</b>.
+                                <fig><image href="../images/designProperties_1.png" alt=""/></fig></li>
+								
+						</ul>
+						</li>
+						<li>In the <b>Design Properties</b> dialog box, view the <b>Construction</b>
+of the bookshelf.<fig>
+								<image href="../images/file_8_1.png" alt=""/>
+							</fig>
+							
+						</li>
+					</ol>
+				</body>
+			</topic>
+			<topic>
+				<title>View the Background</title>
+				<body>
+					<p>To <indexterm term.entry="background, viewing">view the
+background</indexterm>:</p>
+					<ol>
+						<li>Do one of the following:<ul>
+							<li>From the Tool Panel, click <b>Design Properties</b>.<fig>
+								<image href="../images/file_toolpanel.png" alt=""/>
+							</fig>
+							</li>
+							<li>From the <b>Bookshelf</b> menu, click <b>Design
+								Properties</b>.<fig><image href="../images/designProperties_1.png" alt=""/></fig></li>	
+							
+								
+							</ul>
+						</li>
+						<li>In the <b>Design Properties</b> dialog box, view the <b>Background</b> of the bookshelf.<fig>
+								<image href="../images/file_8_2.png" alt=""/>
+							</fig>
+							
+						</li>
+					</ol>
+				</body>
+			</topic>
+			<topic>
+				<title>View the Statistics</title>
+				<body>
+					<p>To <indexterm term.entry="statistics, viewing">view the Statistics</indexterm>:</p>
+					<ol>
+						
+						<li>Do one of the following:<ul>
+							<li>From the Tool Panel, click <b>Design Properties</b>.<p>
+								<image href="../images/file_toolpanel.png" alt=""/>
+							</p>
+							</li>
+							<li>From the <b>Bookshelf</b> menu, click <b>Design
+								Properties</b>.<fig><image href="../images/designProperties_1.png" alt=""/></fig></li>	
+							
+						
+							</ul>
+						</li>
+						<li>In the <b>Design Properties</b> dialog box, view the following <b>Statistics</b>
+of the bookshelf:<ul>
+								<li>Number of Shelves</li>
+								<li>Number of Books</li>
+								<li>Number of Spaces</li>
+								<li>Number of Links</li>
+							</ul>
+							<p>
+								<image href="../images/file_8_3.png" alt=""/>
+							</p>
+							
+						</li>
+					</ol>
+				</body>
+			</topic>
+		</topic>
+		<topic>
+			<title>Saving (Save as) a file</title>
+			<body>
+				<p>To <indexterm term.entry="bookshelf file, saving">save a bookshelf
+file</indexterm>:</p>
+				<ul>
+					<li>From the <b>File</b> menu, click <b>Save</b>.<fig>
+							<image href="../images/file_menu_save.png" alt=""/>
+						</fig>
+						<p>The bookshelf file is saved to the bookshelfeditor directory.</p>
+					</li>
+				</ul>
+				<p>To save bookshelf file with a different name:</p>
+				<ol>
+					<li>From the <b>File</b> menu, click <b>Save As</b>.<fig>
+							<image href="../images/file_menu_saveas.png" alt=""/>
+						</fig>
+					</li>
+					<li>In the <b>Save As</b> dialog box, type the new file name in the <b>File name</b> entry field and click
+<b>Save</b>.<p>The bookshelf file is saved with the new file name to the bookshelfeditor directory.</p>
+					</li>
+				</ol>
+			</body>
+		</topic>
+	</topic>
+	<topic class="nestedtopiclinks">
+		<title>Working with Shelves</title>
+		<body/>
+		<topic class="nestedtopiclinks">
+			<title>Adding a shelf</title>
+			<body>
+				<p>To <indexterm term.entry="shelf, adding">add a shelf</indexterm> to the
+bookshelf:</p>
+				<ol>
+					<li>From the <b>Bookshelf</b> menu, click <b>Add New Shelf</b>.<fig>
+							<image href="../images/shelf_1.png" alt=""/>
+						</fig>
+					</li>
+					<li>In the <b>Shelf Properties</b> dialog box, select the shelf width from the <b>Shelf Width</b> drop down list and the justification, and click <b>OK</b>.<fig>
+							<image href="../images/shelf_2.png" alt=""/>
+						</fig>
+						<p>A new shelf appears at the bottom of your shelf stack.</p>
+						<fig>
+							<image href="../images/shelf_3.png" alt=""/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Deleting a shelf</title>
+			<body>
+				<p>To <indexterm term.entry="shelf, deleting">delete a shelf</indexterm> from
+bookshelf:</p>
+				<ol>
+					<li>Select the shelf you want to delete.
+						<fig>
+							<image href="../images/shelf_14.png" alt=""/>
+						</fig>
+						<p>The red arrow indicates the currently selected shelf.</p>
+					</li>
+					<li>From the <b>Bookshelf</b> menu, click <b>Delete Selected Shelf</b>.<fig>
+							<image href="../images/shelf_4.png" alt=""/>
+						</fig>
+						<p>The selected shelf is deleted.</p>
+						<fig>
+							<image href="../images/shelf_5.png" alt=""/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Changing the size of the shelf</title>
+			<body>
+				<p>To <indexterm term.entry="shelf, changing size">change the size of the
+shelf</indexterm>:</p>
+				<ol>
+					<li>Select the shelf, the size of which you want to change.<fig><image href="../images/change_shelf_size.png" alt=""/></fig><p>The red arrow indicates the currently selected shelf.</p>
+					</li>
+					<li>Do one of the following:<ul>
+							
+							
+						<li>From the Tool Panel, click <b>Shelf Properties</b>.<fig><image href="../images/change_shelf_prop_tool_pane.png" alt=""/></fig></li>
+						<li> From the <b>Bookshelf</b> menu, click <b>Shelf Properties</b>.<fig>
+							<image href="../images/change_shelf_size_prop_menu.png" alt=""/>
+						</fig>
+						</li>	
+					</ul>
+					</li>
+					
+					<li>In the <b>Shelf Properties</b> dialog box, from the <b>Shelf Width</b> drop-down list, select the percentage for your shelf width and click <b>OK</b>.<fig>
+							<image href="../images/shelf_8.png" alt=""/>
+						</fig>
+						<p>The size of the shelf is changed to the specified width.</p>
+						<fig>
+							<image href="../images/change_shelf_size_resu.png" alt=""/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Changing the alignment of a shelf</title>
+			<body>
+				<p>To <indexterm term.entry="shelf, changing alignment">change the alignment of the shelf</indexterm>:</p>
+				<ol>
+					<li>Select the shelf, the alignment of which you want to change.<fig><image href="../images/change_shelf_size_resu.png" alt=""/></fig><p>The red arrow indicates the currently selected shelf.</p>
+					</li>
+					<li>Do one of the following:<ul>
+							
+							
+						<li>From the Tool Panel, click <b>Shelf Properties</b>.<fig><image href="../images/change_shelf_prop_tool_pane.png" alt=""/></fig></li>
+						<li>From the <b>Bookshelf</b> menu, click <b>Shelf Properties</b>.<fig>
+							<image href="../images/change_shelf_size_prop_menu.png" alt=""/>
+						</fig>
+						</li>	
+					</ul>
+					</li>
+					<li>In the <b>Shelf Properties</b> dialog box, click <b>Left</b>, <b>Center</b>, or <b>Right</b> under
+<b>Justification</b>, and then click <b>OK</b>. <fig>
+							<image href="../images/shelf_13.png" alt=""/>
+						</fig>
+						<p>The alignment of the shelf is changed as specified.</p>
+						<fig>
+							<image href="../images/change_shelf_just_resu.png" alt=""/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+	</topic>
+	<topic class="nestedtopiclinks">
+		<title>Working with Books</title>
+		<body/>
+		<topic id="add_book">
+			<title>Adding a book</title>
+			<body>
+				<p>
+					<indexterm term.entry="book, adding">To add a book</indexterm> to a shelf:</p>
+				<ol>
+					<li>Select the shelf where you want to add a book.<p>The red arrow indicates the currently selected shelf.</p>
+					</li>
+					<li>Do one of the following: <ul>
+							<li>Under the <b>Tool Panel</b>, in the <b>Object Palette</b>, click the icon of a book you want to add. <fig>
+									<image href="book_add_tool.png" alt="add book tool"/>
+								</fig>
+							</li>
+							<li>On the <b>Object </b> menu, point to <b>Insert</b>, and then click <b>Default Book</b> or <b>Wide Book</b>.<fig id="book_add_menu">
+									<image href="book_add_menu.png" alt="add a book"/>
+								</fig>
+							</li>
+						</ul>
+						<p>The book appears aligned to the left.</p>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Deleting a book</title>
+			<body>
+				<p>
+					<indexterm term.entry="book, deleting">To delete a book</indexterm> from a shelf:</p>
+				<ol>
+					<li>Select the book you want to delete.</li>
+					<li>On the <b>Object </b> menu, click <b>Delete</b>.<fig id="book_del_menu">
+							<image href="book_del_menu.png" alt="delete a book"/>
+						</fig>
+					</li>
+				</ol>
+				<p>The book is deleted from your shelf.</p>
+			</body>
+		</topic>
+		<topic>
+			<title>Changing the color of a book</title>
+			<body>
+				<p>
+					<indexterm term.entry="book, changing color">To change a color</indexterm> of a book:</p>
+				<ol>
+					<li>Select the book, the color of which you want to change.</li>
+					<li>Do one of the following:<ul>
+							<li>In the <b>Tool Panel</b>, click <b>Book Properties</b>.<fig>
+									<image href="one_book_prop.png" alt="book property tool"/>
+								</fig>
+							</li>
+							<li>On the <b>Object </b> menu, click <b>Book Properties</b>.<fig>
+									<image href="book_prop_menu.png" alt="book property menu"/>
+								</fig>
+							</li>
+						</ul>
+					</li>
+					<li>In the <b>Object Properties</b> dialog box, from the <b>Colour</b> list, click <b>Gray-Green</b>, <b>Blue-Gray</b>, <b>Mauve</b>, or <b>Sky Blue</b>.<fig>
+							<image href="book_color.png" alt="change color"/>
+						</fig>
+						<p>The color of your book has changed to the selected color.</p>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Adding a title to the book</title>
+			<body>
+				<p>
+					<indexterm term.entry="book, adding title">To add a title</indexterm> to the book:</p>
+				<ol>
+					<li>Select the book to which you want to give a title.</li>
+					<li>Do one of the following:<ul>
+							<li>In the <b>Tool Panel</b>, click <b>Book Properties</b>.<fig>
+									<image href="one_book_prop.png" alt="book property tool"/>
+								</fig>
+							</li>
+							<li>On the <b>Object </b> menu, click <b>Book Properties</b>. <fig>
+									<image href="book_prop_menu.png" alt="book property menu"/>
+								</fig>
+							</li>
+						</ul>
+					</li>
+					<li>In the <b>Object Properties</b> dialog box, in the <b>Title</b> field, enter the title for your book.<fig>
+							<image href="book_title.png" alt="book title"/>
+						</fig>
+						<p>The title you entered appears on the spine of your book.</p>
+						<fig>
+							<image href="book_title_result.png" alt="boo title result"/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Moving the book left or right</title>
+			<body>
+				<p>
+					<indexterm term.entry="book, moving left or right">To move the book left or right</indexterm> on a shelf:</p>
+				<ol>
+					<li>Select the book you want to move.</li>
+					<li>On the <b>Object </b> menu, click <b>Move Left</b> or <b>Move Right</b>.<fig>
+							<image href="book_move_menu_3.png" alt="book move"/>
+						</fig>
+						<p>The book is moved in the specified direction.</p>
+						<fig>
+							<image href="book_move_result_3.png" alt="book move result"/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Adding a URL to the book</title>
+			<body>
+				<p>
+					<indexterm term.entry="book, adding URL">To add a URL</indexterm> to a book:</p>
+				<ol>
+					<li>Select the book for which you want to assign a URL.</li>
+					<li>Do one of the following:<ul>
+							<li>In the <b>Tool Panel</b>, click <b>Book Properties</b>.<fig>
+									<image href="one_book_prop.png" alt="book property tool"/>
+								</fig>
+							</li>
+							<li>On the <b>Object </b> menu, click <b>Book Properties</b>.<fig>
+									<image href="book_prop_menu_cut.png" alt="book prop"/>
+								</fig>
+							</li>
+						</ul>
+					</li>
+					<li>In the <b>Object Properties</b> dialog box, in the <b>URL Link</b> field, enter a web address.<fig>
+							<image href="book_url_prop.png" alt=""/>
+						</fig>
+						<p>The URL link you have entered appears in the <b>Object Link</b> field of the <b>Tool Panel</b>.</p>
+						<fig>
+							<image href="book_url_tool.png" alt="book url tool"/>
+						</fig>
+					</li>
+				</ol>
+				<note>The web address you enter in the <b>URL Link</b> field must start with &quot;http://&quot; or &quot;https://&quot;and should not have white spaces in it.</note>
+			</body>
+		</topic>
+		<topic>
+			<title>Viewing book properties</title>
+			<body>
+				<p>
+					<indexterm term.entry="book, viewing properties">To view properties of the book</indexterm>:</p>
+				<ol>
+					<li>Select the book, the properties of which you want to view.</li>
+					<li>Do one of the following:<ul>
+							<li>In the <b>Tool Panel</b>, click <b>Book Properties</b>.<fig>
+									<image href="one_book_prop.png" alt="book property tool"/>
+								</fig>
+							</li>
+							<li>On the <b>Object </b> menu, click <b>Book Properties</b>.<fig>
+									<image href="book_prop_menu_cut.png" alt="book prop"/>
+								</fig>
+							</li>
+						</ul>
+					</li>
+					<li>In the <b>Object Properties</b> dialog box, view the following object properties:<ul>
+							<li>
+								<b>
+									<indexterm term.entry="book, Style property">Style</indexterm>
+								</b>
+							</li>
+							<li>
+								<b>
+									<indexterm term.entry="book, Colour property">Colour</indexterm>
+								</b>
+							</li>
+							<li>
+								<b>
+									<indexterm term.entry="book, Title property">Title</indexterm>
+								</b>
+							</li>
+							<li>
+								<b>
+									<indexterm term.entry="book, URL Link property">URL Link</indexterm>
+								</b>
+							</li>
+							<li>
+								<b>
+									<indexterm term.entry="book, Object Width propety">Object Width</indexterm>
+								</b>
+							</li>
+							<li>
+								<b>
+									<indexterm term.entry="book, Building Width property">Building Width</indexterm>
+								</b>
+								<fig>
+									<image href="book_object_prop_basic.png" alt="book properties"/>
+								</fig>
+							</li>
+						</ul>
+					</li>
+				</ol>
+			</body>
+		</topic>
+	</topic>
+	<topic class="nestedtopiclinks">
+		<title>Working with Spaces</title>
+		<body/>
+		<topic>
+			<title>Adding a space</title>
+			<body>
+				<p/>
+				<p>
+					<indexterm term.entry="space, adding">To add a space</indexterm> to a shelf:</p>
+				<ol>
+					<li>Select the shelf where you want to add a space.</li>
+					<li>Do one of the following: <ul>
+							<li>Under the <b>Tool Panel</b>, in the <b>Object Palette</b>, click the icon of a space.<fig>
+									<image href="space_add_tool.png" alt="space add tool"/>
+								</fig>
+							</li>
+							<li>On the <b>Object </b> menu, point to <b>Insert</b>, and then click <b>Default Book</b> or <b>Wide Book</b>.<fig>
+									<image href="space_add.png" alt="add space menu"/>
+								</fig>
+							</li>
+						</ul>
+						<p>The space appears aligned to the left.</p>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Deleting a space</title>
+			<body>
+				<p>
+					<indexterm term.entry="space, deleting">To delete a space </indexterm>from a shelf:</p>
+				<ol>
+					<li>Select the space you want to delete.</li>
+					<li>On the <b>Object </b> menu, click <b>Delete</b>.<fig>
+							<image href="space_delet.png" alt="space del"/>
+						</fig>
+						<p>The space is deleted from your shelf.</p>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Changing the size of the space</title>
+			<body>
+				<p>
+					<indexterm term.entry="space, changing the size">To change the size</indexterm> of the space:</p>
+				<ol>
+					<li>Click the space, the size of which you want to change.</li>
+					<li>Do one of the following:<ul>
+							<li>In the <b>Tool Panel</b>, click <b>Book Properties</b>.<fig>
+									<image href="one_book_prop.png" alt="book property tool"/>
+								</fig>
+							</li>
+							<li>On the <b>Object </b> menu, click <b>Book Properties</b>. <fig>
+									<image href="book_prop_menu_cut.png" alt="book prop"/>
+								</fig>
+							</li>
+						</ul>
+					</li>
+					<li>In the <b>Space Properties</b> dialog box, move the slider to a desired space size.<fig>
+							<image href="space_chng_window.png" alt="space window"/>
+						</fig>
+					</li>
+					<li>Click <b>OK</b>.<p>The size of the space is changed to the specified size.</p>
+						<fig>
+							<image href="space_chng_result.png" alt="space change result"/>
+						</fig>
+					</li>
+				</ol>
+				<p/>
+			</body>
+		</topic>
+		<topic>
+			<title>Moving a space left or right</title>
+			<body>
+				<p>
+					<indexterm term.entry="space, move left or right">To move a space left or right</indexterm> on a shelf:</p>
+				<ol>
+					<li>Select the space you want to move.</li>
+					<li>On the <b>Object </b> menu, click <b>Move Left</b> or <b>Move Right</b>.<fig>
+							<image href="space_move.png" alt="space move"/>
+						</fig>
+						<p>The space is moved as specified.</p>
+						<fig>
+							<image href="space_move_result.png" alt="space moved results"/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+	</topic>
+	<topic class="nestedtopiclinks" id="topic8">
+		<title>Exporting the Bookshelf</title>
+		<body>
+			<p>Once you have created your bookshelf and all of your books are organized how you want them to be, it is time to <indexterm term.entry="bookshelf, exporting">export your bookshelf</indexterm>. Exporting your bookshelf transforms your bookshelf into a viewable format.</p>
+		</body>
+		<topic class="nestedtopiclinks">
+			<title>Description of the file types</title>
+			<body>
+				<p>Below is the description of the <indexterm>file types</indexterm> that you can export using Bookshelf Editor:</p>
+				<fig>
+					<image href="export_all.png" alt="export_all"/>
+				</fig>
+				<ul>
+					<li>
+						<indexterm>XML</indexterm> - Stands for Extensible Markup Language. Exporting your bookshelf as an <b>XML Document</b> allows you to modify all of the wording, where text appears, whether text is plain-font, bold or in italics, and so on.</li>
+					<li>
+						<indexterm>XSL</indexterm> - Stands for Extensible Stylesheet Language. Exporting your bookshelf as an <b>XSL Document</b> allows you to modify the XML stylesheet. That is, you can alter characteristics such as font, text color, letter-size, indentation size, color scheme, and so on.</li>
+					<li>
+						<indexterm>HTML</indexterm> - Stands for HyperText Markup Language. Exporting your book shelf as an HTML file allows you to view your bookshelf and follow the book-links using an Internet browser.</li>
+					<li>
+						<indexterm>JPEG</indexterm> - Stands for Joint Photographic Expert Group and it is used as a method for compressing digital images.</li>
+				</ul>
+			</body>
+		</topic>
+		<topic>
+			<title>Exporting to HTML</title>
+			<body>
+				<p>To <indexterm term.entry="HTML, exporting">export your bookshelf file to HTML</indexterm>:</p>
+				<ol>
+					<li>In the menu bar, click <b>File</b>
+						<b>&gt;</b>
+						<b>Export Bookshelf</b>. <fig>
+							<image href="file_export_bookshelf.png" alt="file export bookshelf"/>
+						</fig>
+					</li>
+					<li>Ensure <b>HTML Document</b> and <b>JPEG Image File</b> are selected, specify the names for the HTML and JPEG files, and click <b>Export Now</b>.<comment>Note- You can change the name of the file in the text box below the file format.</comment>
+						<fig>
+							<image href="export_html_jpeg.png" alt="export html jpeg"/>
+						</fig>
+						<p>Bookshelf Editor creates an HTML file with the name you specified in the <b>Export Bookshelf</b> dialog box in the directory where you installed Bookshelf Editor 1.1. The name of the export directory appears in the <b>Directory for Export</b> field.</p>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Exporting to XML</title>
+			<body>
+				<p>To export your bookshelf file to <indexterm term.entry="XML, exporting">XML</indexterm>:</p>
+				<ol>
+					<li>In the menu bar, click <b>File</b>
+						<b>&gt;</b>
+						<b>Export Bookshelf</b>. <fig>
+							<image href="file_export_bookshelf.png" alt="file export bookshelf"/>
+						</fig>
+					</li>
+					<li>Select <b>XML Document</b>, specify the names for the XML file, and click <b>Export Now</b>.<comment>Note- You can change the name of the file in the text box below the file format.</comment>
+						<fig>
+							<image href="export_xml.png" alt="export xml"/>
+						</fig>
+						<p>Bookshelf Editor creates an XML file with the name you specified in the <b>Export Bookshelf</b> dialog box in the directory where you installed Bookshelf Editor 1.1. The name of the export directory appears in the <b>Directory for Export</b> field.</p>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Exporting to XSL</title>
+			<body>
+				<p>To export your bookshelf file to <indexterm term.entry="XSL, exporting">XSL</indexterm>:</p>
+				<ol>
+					<li>In the menu bar, click <b>File</b>
+						<b>&gt;</b>
+						<b>Export Bookshelf</b>. <fig>
+							<image href="file_export_bookshelf.png" alt="file export bookshelf"/>
+						</fig>
+					</li>
+					<li>Select <b>XSL Document</b>, specify the name for XSL file, and click <b>Export Now</b>.<comment>Note- You can change the name of the file in the text box below the file format.</comment>
+						<fig>
+							<image href="export_xsl.png" alt="export xsl"/>
+						</fig>
+						<p>Bookshelf Editor creates an XSL file with the name you specified in the <b>Export Bookshelf</b> dialog box in the directory where you installed Bookshelf Editor 1.1. The name of the export directory appears in the <b>Directory for Export</b> field.</p>
+					</li>
+				</ol>
+			</body>
+		</topic>
+	</topic>
+	<topic class="nestedtopiclinks">
+		<title>Opening and Using your Bookshelf</title>
+		<body/>
+		<topic>
+			<title>Opening the bookshelf in your browser</title>
+			<body>
+				<p>To <indexterm term.entry="bookshelf, opening">open the bookshelf</indexterm> in your browser:</p>
+				<ol>
+					<li>Locate the file <b>Bookshelf.html</b> in Windows Explorer.</li>
+					<li>Double-click <b>Bookshelf.html</b>.<fig>
+							<image href="../images/use_3.png" alt=""/>
+						</fig>
+						<p>The default browser will opens to your bookshelf web page.</p>
+						<fig>
+							<image href="../images/use_1.png" alt=""/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+		<topic>
+			<title>Accessing book contents</title>
+			<body>
+				<p>To <indexterm term.entry="book content, accessing">access book
+contents</indexterm>:</p>
+				<ol>
+					<li>Move the cursor over the book you want to read.<p>The cursor changes to<image href="../images/hand_15.png" alt=""/> when it passes over a book that has a hyperlink.</p></li><li>Click on the selected book. <fig>
+							<image href="../images/use_4.png" alt=""/>
+						</fig>
+						<p>The book content is displayed in the browser.</p>
+						<fig>
+							<image href="../images/use_2.png" alt=""/>
+						</fig>
+					</li>
+				</ol>
+			</body>
+		</topic>
+	</topic>
+	<back/>
+</helpmanual>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LETTER SYSTEM "../DTDs/letter.dtd">
+<?xml-stylesheet type="text/xsl" href="../xslt/student_letter.xsl"?>
+<?xml-stylesheet type="text/css" href="../css/letter-oxygen.css"?>
+<?altova_sps ..\DTDs\letter.sps?>
+<LETTER>
+    <HEADING>
+        <SENDER>
+            <ADDRESS>
+                <ADDRLINE>9101 Horne Street</ADDRLINE>
+                <CITY>Burnaby</CITY>
+                <STATE>BC</STATE>
+                <CODE>V3N 4M3</CODE>
+            </ADDRESS>
+            <PHONE>604-555-5555</PHONE>
+            <EMAIL>pengyl@gmail.com</EMAIL>
+        </SENDER>
+        <DATE>October. 26, 2013</DATE>
+        <RECIPNT><NAME>Students of PTW</NAME>
+            <ADDRESS>
+                <ADDRLINE>Suite 112 2-2026 Lanthier Drive</ADDRLINE>
+                <CITY>Orleans</CITY>
+                <STATE>ON</STATE>
+                <CODE>K4A 0N6</CODE>
+            </ADDRESS>
+        </RECIPNT>
+    </HEADING>
+    <SALUTATN>Dear classmates</SALUTATN>
+    <SUBJECT>Manual Writing Assignments</SUBJECT>
+    <body>
+        <p>Please consider me as your group partner for the manual writing assignments (assignments #3 and #4). You will certainly benefit from my contribution to the project because I have a strong software development background and excellent teamwork skills.</p>
+        <p>I have a master's degree in Electrical Engineering. The strict training required for my degree has made me into a person with a logical way of thinking, strong analytical ability, and problem solving skills.</p>
+        <p>I have over 10 years of experience working in the IT field. In the past years, I have
+            developed many applications; therefore I can quickly understand how software works. This
+            understanding is very important for writing manuals. In the course of my work, I have
+            both read and written many instructions, user guides and manuals, so I am able to tell
+            what kind of manual or instructions are easily understood.</p>
+        <p>I have hands-on working experience with XML, website administration and development, graphics design (Adobe Flash, Photoshop), etc. All of those experiences will help to make the work on manual assignments easy for our group.</p>
+        <p>I strongly believe that behind any successful project there is a great team, so I always
+            pay close attention to collaborating with co-workers. I am happy to help people and to
+            share my opinions, and am also open to new technology and suggestions from others. </p>
+        <p>The above points should convince you that working with me will be a pleasant and creative experience. Let's work as a team to fulfill our assignments with a high standard.</p>
+        <p>Please contact me by email: pengyl@gmail.com to discuss the formation of an enthusiastic
+            team. I look forward to working with you to produce a very excellent and successful
+            project.</p>
+    </body>
+    <foot>
+        <CLOSURE>Yours sincerely</CLOSURE>
+        <NAME>Yulin Peng</NAME>
+    </foot>
+</LETTER>

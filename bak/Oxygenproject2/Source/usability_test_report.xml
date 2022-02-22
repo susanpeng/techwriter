@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE helpmanual SYSTEM "../DTDs/manual.dtd">
+<?xml-stylesheet type="text/xsl" href="../xslt/helpmanual.xsl"?>
+<?xml-stylesheet type="text/css" href="../css/manual-oxygen.css"?>
+<?altova_sps ..\DTDs\helpmanual.sps?>
+<?altova_xslfo ..\xslt\helpmanualpdf.xslt?>
+<helpmanual>
+    <front>
+        <title>Usability Testing Report</title>
+        <author>Walter Scott, Lilia Medvedyeva, Yulin Peng</author>
+        <version>3.0</version>
+        <date>17 Deceber 2013</date>
+    </front>
+    <topic>
+        <title>Executive Summary</title>
+        <body>
+            <p>This report provides the description of the product and objectives of the usability
+                test and explains the methods applyed in the usability test. </p>
+            <p>It analyzes the test results, and gives the conclusion drawn from the analysis.</p>
+            <p> The report also lists the necessary modifications and all "fix" works fullfiled by
+                the manual writing team. </p>
+            <p>At the end of the report, there is an appendix including task list, post-test
+                questionnaire, orientation script, and profile of test participants for reference.
+            </p>
+        </body>
+    </topic>
+    <topic>
+        <title>Introduction</title>
+        <body>
+            <ul>
+                <li>
+            <p><b>Production description</b></p>
+                    <p>The Bookshelf Editor 1.1 is a compact application designed to help you to stor, orgnize and manage links to online content.</p>
+                    <p>The purpose of the test is to test the Bookshelf Editor User's Manual.</p>
+                </li>
+                <li>
+                    <p><b>Objectives</b></p>
+            <p>The objectives of the test are to verify the following:</p>
+            <ol>
+                <li>The information presented in the Bookshelf Editor manual is complete and
+                            accurate.</li>
+                <li>The manial is helpful to end users in accomplishing the basic tasks.</li>
+                <li>The answers to the specific questions are easy to find.</li>
+                <li>The language used in the manual is clear and concise.</li>
+                <li>The manual instructions contain sufficient amount of detail to successfully
+                            complete a specific task.</li>
+                <li>The refereance information for commands, controls, options is clear and
+                            complete.</li>
+            </ol>
+                </li>
+           </ul>
+        </body>
+    </topic>
+    <topic>
+        <title>Methodology</title>
+        <body>
+            <p>The test was conducted with each participant in the isolated environment. The test
+                equipment was Windows 7 machine with the Bookshelf Editor application already
+                installed.</p>
+            <p>All participants of the test were</p>
+            <ul>
+                <li>familiar with how to use a computer, perform basic Windows functions, and browse
+                    the internet</li>
+                <li>new to the Bookshelf Editor software</li>
+            </ul>
+            <p>A person who conducts the teat (a tester)</p>
+            <ul>
+                <li>reads the Orientation Script to a participant</li>
+                <li>gives a hard copy of the test tasks</li>
+                <li>observes the teat session and takes notes</li>
+                <li>conducts post-testing interview with the participants</li>
+            </ul>
+        </body>
+    </topic>
+    <topic>
+        <title>Test Result</title>
+        <body>
+            <p>Four(?) participants have tested the Bookshelf Editor User's Manual. Referencing the
+                user's manual,  participants fullfililed the tasks listed on the task list.</p>
+            <p>Most of the scores on the evaluate score are 1, or 2 of 6.</p>
+            <p>Participants thought that the User's Manual was very easy to use. They could find the
+                information easily and get clear instruction for their oprations.</p>
+            <p>The results of the interview based on the questions on the post-test questionnaire
+                are also satisfied.</p>
+            <p>In some places, participants point out some inconsistent about the manual such as
+                select ... ... etc. </p>
+            <p>We will add more based on our test results.</p>
+        </body>
+    </topic>
+    <topic>
+        <title>Conclutions</title>
+        <body>
+            <p>Overall the User's manual is clear, concise, accurate, and easy to use. It is a
+                success product.</p>
+            <ol>
+                <li>The information presented in the Bookshelf Editor manual is complete and
+                    accurate.</li>
+                <li>The manual is helpful to end users in accomplishing the basic tasks.</li>
+                <li>The answers to the specific questions are easy to find.</li>
+                <li>The language used in the manual is clear and concise.</li>
+                <li>The manual instructions contain sufficient amount of detail to successfully
+                    complete a specific task.</li>
+                <li>The reference information for commands, conrtols, options is clear and
+                    complete.</li>
+            </ol>
+        </body>
+    </topic>
+    <topic>
+        <title>Recommendations</title>
+        <body/>
+        <topic>
+            <title>Suggested changes as a result of usability test</title>
+            <body>
+                <ol>
+                    <li/>
+                    <li/>
+                </ol>
+            </body>
+        </topic>
+        <topic>
+            <title>Suggested changes as a result of the maker's comments</title>
+            <body>
+                <ol>
+                    <li>Add the Hot-Key section.</li>
+                    <li>Add the Glossary.</li>
+                    <li>Add the URL for the web page to login in the step 1 of the "3.1. Downloading
+                        the software" section.</li>
+                    <li> Remove the line "The new Bookshelf confirmation ..." under the graphic form
+                        the step 1 of the "4.1. Starting a new file" section.</li>
+                    <li>Add the alternative method, using menu bar, and remove the note in the
+                        "4.3.1. Adding a bookshlef Title" section.</li>
+                    <li>Add the graphic to the alternative menu bar method in step 1of the "4.3.2.
+                        View the Construction", the "4.3.2. View the Background", and "4.3.3. View
+                        the Statistics" sections.</li>
+                    <li>Delete the duplicate line in the step 1 of the "5.2. Deleting a shelf"
+                        section.</li>
+                    <li>Add graphic for the alternative methord to the step 2, and use the graphics
+                        with two shelves instead the graphics with only one shelf in the step 1 and
+                        3 of the "5.3. Change the size of the shelf" section.</li>
+                    <li>Separate one long step to two short steps in the  "9.1. Opening the
+                        Bookshlef in your browser" section.</li>
+                    <li>Separate on step to two steps, mention that the cursor change to a hand icon
+                        when the mouse pass over a book that has a hyperlink, and change "select" to
+                        "click" in the "9.2. Accessing book contents" section.</li>
+                </ol>
+                <p>All above suggested
+                    changes have been applyed as part of the Assignment #4.</p>
+            </body>
+        </topic>
+    </topic>
+    <topic>
+        <title>Appendix</title>
+        <body/>
+        <topic>
+            <title>Orientation Script</title>
+            <body>
+                <p>Hi [the participant's name]</p>
+                <p>Thank you for agreeing to participate in testing.</p>
+                <p>I'm [the tester's name]. I will be working with you today, monitoring this
+                    session, and making some notes.</p>
+                <p>The purpose of this test is to determine how useful the Bookshelf Editor manual for accomplishing some typical tasks in the Bookshelf Editor application. Please do not be concerned with achieving results. We are not testing you. You are here to help us to detect hidden problems with the manual. </p>
+                <p>Before the beginning of the test, I will give you a sheet with a list of tasks to complete in Bookshelf Editor. During the session, you will work through each task, and I will be making some notes. Please note that you’re testing not the software, but the manual. I ask you please refer to the Bookshelf Editor manual for the information on how to complete each task. I also ask you to consult with the manual first if you have any questions related to the software functionality or user interface. </p>
+                <p>You can ask any question any time, but I may not answer them since we will be testing the usability of the documentation.</p>
+                
+                <p>I would like to encourage you to think out loud as you will be working through a specific task.</p>
+                
+                <p>After you complete each task, I’ll ask you to rate how useful the manual was for helping you to perform the task. I will use a 6-point evaluation scale for each task in a list.</p>
+                
+                <p>After you finish the test, I’m going to ask you a few questions regarding your
+                    experience using the manual.</p>
+                
+                <p>Any moment during the test, you are free to leave if you want.</p>
+                
+                <p>Do you have any question before we start?
+                </p>
+            </body>
+        </topic>
+        <topic>
+            <title>Orientation Script (2)</title>
+            <body>
+                <p> Hello, (the participants’ name), </p><p>                    I’m (the tester’s name).
+                </p><p> Thank you for participating in this manual testing. </p><p>       The purpose of this test is to uncover the usability problems with the user’s manual of the Bookshelf Editor 1.1.
+                    
+                </p><p>Please notice that you are testing the user’s manual of the bookshelf Editor, not the software
+                    itself. You yourself are not being tested. </p><p>You will receive a task list with about 20 tasks to be completed. You need to reference the
+                    user’s manual to fulfill these tasks, so that you are able to find out how easy,
+                    or how difficult, it is to use the user’s manual. You will help us uncover any
+                    problems with the user’s manual. </p><p>After you finish each task, please circle a number on the evaluation scale under each task. You
+                    can also put your comments about how helpful the user's manual is along the
+                    notes section. </p><p>You may ask questions when you encounter any difficulty while you are testing. I might not be allowed to describe how to complete a task, but I might be able to give you some hints.
+                    
+                </p>
+                <p>After you finish all tasks, I'm going to ask you a few questions regarding your
+                    experiences using the manual.</p><p>Please be aware that you are allowed to leave any time you want.
+                    
+                </p><p>Please feel free to ask me if you have any further questions.
+                    
+                </p><p>Thank you very much.
+                    
+                </p>
+            </body>
+        </topic>
+        <topic>
+            <title>Task List</title>
+            <body>
+                <p>Complete the following tasks using the Booksshelf Editor application and
+                    manual:</p>
+                <ol>
+                    <li>Start the Bookshelf Editor.<p>How easy is the manual to use in carring out
+                            this task?</p><p>Very easy 1...2...3...4...5...6...Very
+                                difficult</p><p>Notes:</p></li>
+                    <li>Give the following title to your boookshelf: Media.</li>
+                    <li>Add the second shelf with the default settings to your bookshelf.</li>
+                    <li>Add a new shelf that is 70% of the width and align it to the right.</li>
+                    <li>Delete the middle shelf.</li>
+                    <li>Change the properties of the bottom shelf to 100% width.</li>
+                    <li>Configure the bottom shelf.<ol>
+                            <li>Add 5 new books.</li>
+                            <li>Add a space between books to split them into two groups consisting
+                                of 3 and 2 books, respectively.</li>
+                            <li>Change the color of the first book to Sky-Blue.</li>
+                            <li>Change the color of the second book to Mauve.</li>
+                            <li>Assign the titles and URLs to your books as shown in the
+                                    table:<table border="1">
+                                    <tbody>
+                                        <tr>
+                                            <th align="center" width="2">N</th>
+                                            <th align="center">Title</th>
+                                            <th align="center">URL</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>CBC Radio</td>
+                                            <td>http://www.cbc.ca/radio/</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Reuters</td>
+                                            <td>http://reuters.com/</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>CBC News</td>
+                                            <td>http://www.cbc.ca/news</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>CBC Music</td>
+                                            <td>http://music.cbc.ca/</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>BBC News</td>
+                                            <td>http://www.bbc.com/news/</td>
+                                        </tr>
+                                    </tbody>
+                                </table></li>
+                            <li>Move the first blue book to the right.</li>
+                            <li>Make the space larger.</li>
+                        </ol></li>
+                    <li>Configure the top shelf.<ol>
+                            <li>Add 5 wide books to the top shelf.</li>
+                            <li>Add a space to the top shelf.</li>
+                            <li>Add a narrow book to the top shelf.</li>
+                            <li>Selete the space from the top shelf.</li>
+                            <li>Delete the narrow book from the top shelf.</li>
+                            <li>Assign the titles and URLs to your books as shown inthe table:<table
+                                    width="5" border="1">
+                                    <tbody>
+                                        <tr>
+                                            <th align="center">N</th>
+                                            <th align="center">Title</th>
+                                            <th align="center">URL</th>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Time</td>
+                                            <td>http://www.time.com/time/</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Newsweek</td>
+                                            <td>http://www.newsweek.com/</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Macleans</td>
+                                            <td>http://www2.macleans.ca/</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>NY Times</td>
+                                            <td>http://www.nytimes.com/</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>The Star</td>
+                                            <td>http://www.thestar.com/</td>
+                                        </tr>
+                                    </tbody>
+                                </table></li>
+                        </ol></li>
+                    <li>Save your bookshelf.</li>
+                    <li>View the properties of the bottom shelf.</li>
+                    <li>View the statistics of your bookshelf.</li>
+                    <li>View the XML vode.</li>
+                    <li>Export your bookshelf.</li>
+                    <li>Open your bookshelf in the browser.</li>
+                    <li>Open the first book from the bottom shelf.</li>
+                    <li>Go back to the Bookshelf Editor and rearrange the books on the bottom shelf
+                        so that the three CBC books are located at the left of the space, while
+                        Retuters and BBC News are at the right.</li>
+                    <li>Save the bookshelf file.</li>
+                    <li>Open your bookshelf in the browser.</li>
+                    <li>Test the books' links.</li>
+                </ol>
+            </body>
+        </topic>
+        <topic>
+            <title>Post-test questionnaire</title>
+            <body>
+                <ol>
+                    <li>Was it easy to find the information you needed?</li>
+                    <li>Could you understand the information you found in the manual?</li>
+                    <li>Did information you found helped you to accomplish your task at hand?</li>
+                    <li>Is there any information that you couldn’t find in the manual? If yes, specify.</li>
+                    <li>Does the manual contain sufficient amount of detail (text instructions and
+                        screen shots)?</li>
+                    <li>Is there any excessive or irrelevant information or screen shots in the
+                        manual? If yes, specify.</li>
+                    <li>How consistent the help manual is? (1 – very inconsistent, 6 - very consistent)</li>
+                    <li>Is terminology used in the manual clear and easy to understand? </li>
+                    <li>Would it be easier to read the description of the GUI components, such as the Menu commands, if they were presented in tables with borders?</li> 
+                    <li>Any additional comments?</li>
+                </ol>
+            </body>
+        </topic>
+        
+    </topic>
+    <back></back>
+</helpmanual>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Blogs</title>
+	<link href="/styles/style.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="wholepage">
+
+	<div id="header"></div>
+	<script>$("#header").load("../hf/header.html");</script>
+	<script>
+		$(document).ready(function(){
+			$('#blogs').addClass('selected');
+
+		});
+	</script>
+<div id="middle">
+
+	<div id="mycontent"></div>
+	<script>
+	$("#mycontent").load("./how_I_became_a_technical_writer.html");
+	</script>
+</div>
+
+	<div id="footer"></div>
+	<script>
+		$("#footer").load("../hf/footer.html");
+		</script>
+</div>
+</body>
+</html>

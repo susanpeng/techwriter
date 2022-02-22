@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aegisub User Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" text = "text/css" href = styles/style.css>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wholepage">
+ <div align="center"><img src="./images/banner.png" width="600" height="100" alt=""/></div>
+ <script>
+  $(document).ready(function(){
+  $('#timing').addClass('selected');
+});
+</script>
+ <div class="middle">
+	<div id="sidenav"></div>
+	<script>$("#sidenav").load("sidebar.html");</script>
+	
+<div class="main">
+
+<H3>Timing Subtitles to Audio</H3>
+<hr>
+<p>Timing subtitles to audio is a critical task when adding subtitles to a video because it allows audience to see the subtitles at the same time while listening to the corresponding scripts. Every line of subtitles needs to be timed to match its audio presentation.</p>
+<p>To time subtitles to audio: </p>
+<OL>
+  <LI value="1">From main menu, click <strong>File | Open Subtitles...</strong> to open a subtitle file.<BR>
+  Subtitles display in the subtitles grid. </LI>
+  <p><img src="images/open_sub_2.png" width="430" height="240" alt=""/></p>
+  <LI value="2">From main menu, click <strong>Audio | Open Audio File...</strong> to open your audio file for adding subtitles.</LI>
+  <p> Audio displays in waveform in the audio area. </p>
+  <p><img src="images/audio.png" width="430" height="140" alt=""/></p>
+  <LI value="3">In the subtitles grid , click the subtitle line you want to time to audio. The selected subtitle line displays in the subtitles editor.</p>
+    <p><img src="images/select_line.png" width="430" height="190" alt=""/></p>
+  </LI>
+  <LI value="4">In the audio area, click <img src="./images/playbutton.png" width="10" height="10" alt=""> (play button) to play and listen to the audio. When you locate the start time point of the corresponding speech, click and drag the red line (start line) to the start point.<BR>
+    <p><img src="images/start_point.png" width="430" height="100" alt=""/></p>
+  </LI>
+  <LI value="5">In the audio area, click <img src="./images/playbutton.png" width="10" height="10" alt="">  to play and listen to the audio. When you reach the end time point of the speech, click and drag the blue line (end line) to the end point.<BR>
+    <p><img src="images/end_point.png" width="430" height="100" alt=""/></p>
+  </LI>
+  <LI value="6">Under the wave form, click <img src="./images/commitbutton.png" width="15" height="15" alt=""> (commit button). The start and end time points are set up for the subtitle line.</p>
+    <p><img src="images/commit_2.png" width="430" height="290" alt=""/></p>
+  </LI>
+  <LI value="7">Look at the <strong>CPS</strong> field in the subtitles grid (multi-line subtitles area):
+    <OL>
+      <LI value="1">If the <strong>CPS</strong> field is red, adjust the length of this subtitle line (See "<A href="EditingSubtitles.html">Editing Subtitles</A>").</LI>
+      <p><img src="images/cps.png" width="390" height="120" alt=""/></p>
+      <LI value="2">If the <strong>CPS</strong> field is not red, this subtitle line is successfully timed to the audio.</LI>
+    </OL>
+  </LI>
+  <LI value="8">From the Toolbar, click <img src="./images/savebutton.png" width="15" height="15" alt=""> (save button) to save your work for this subtitle line.<p><img src="./images/saveitiming.png" width="430" height="44" alt=""></p>
+    </LI>
+</OL>
+<p>After you finish all subtitle lines, from menu, click <strong>Save | Subtitles</strong> to save the subtitle file; then click <strong>Aegisub | Quit Aegisub</strong> to quit the Aegisub program.
+
+<p>  Congratulations! Now, you have successfully finished timing subtitles for your first video.</p>
+<p align="right"> <a href="./designStyle.html"><img src="./images/arrowleft.png" width="30" height="20" alt="" /></a></p>
+ </div>
+ </div>
+ 
+ <div id="footer"><p>Copyright©2022 Susan All Rights Reserved.</p></div>
+</div>
+</body>
+</html>

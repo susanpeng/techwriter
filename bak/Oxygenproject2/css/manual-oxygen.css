@@ -1,0 +1,454 @@
+@import "html_cals_table.css";
+
+helpmanual {text-align: left;
+ margin-left: 15%;
+ margin-right: 15%;
+font-family: Geneva,Arial,Helvetica,san-serif;
+
+}
+
+helpmanual front title {display: block;
+ color: #000099;
+margin-top: 35px;
+ font-size: 18pt;
+font-weight: bold;
+}
+
+author, version, date {
+	display: block;
+}
+author:before{content:"Author: "; font-weight: bold; 
+}
+version:before{content:"Version: ";font-weight: bold; 
+}
+
+date:before{content:"Date: "; font-weight: bold; 
+}
+topic title {
+	 font-size: 16pt;
+display: block;
+font-weight: bold;
+color: #000099;
+
+
+}
+topic topic title {
+	 font-size: 14pt;
+display: block;
+font-weight: bold;
+color: black;
+margin-left:1em;
+}
+topic topic topic title{
+	 font-size: 12pt;
+display: block;
+font-weight: bold;
+margin-left:2em;
+color: black;
+}
+ topic topic topic topic title{
+	 font-size: 11pt;
+display: block;
+font-weight: bold;
+margin-left:3em;
+}
+topic section title {
+	 font-size: 10pt;
+display: block;
+font-weight: bold;
+color: black;
+margin-left:3em;
+}
+
+indexterm {
+	display: inline;
+}
+* b {
+	font-weight: bold;
+}
+
+
+ol li {display: list-item;
+list-style-type:  decimal;
+list-style-position: inside;
+margin-left: 25px;
+ 
+}
+
+ol li ol li {display: list-item;
+list-style-type:     lower-alpha;
+list-style-position: inside;
+margin-left: 25px;
+ 
+}
+ol li ol li ol li{display: list-item;
+list-style-type:  decimal;
+list-style-position: inside;
+margin-left: 25px;
+ 
+}
+
+ul li {display: list-item;
+list-style-type:  disc;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ol li ul li {display: list-item;
+list-style-type:  disc;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ol li ul li ul li{display: list-item;
+list-style-type:  circle;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ul[bullet="square"] li {display: list-item;
+list-style-type:  square;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ul[bullet="disc"] li {display: list-item;
+list-style-type:  disc;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ul[bullet="circle"] li {display: list-item;
+list-style-type:  circle;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ol li ul[bullet="square"] li {display: list-item;
+list-style-type:  square;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ol li ul[bullet="disc"] li {display: list-item;
+list-style-type:  disc;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+ol li ul[bullet="circle"] li {display: list-item;
+list-style-type:  circle;
+list-style-position: inside;
+margin-left: 20px;
+}
+
+
+ul.disc li {display: list-item;  list-style-type: disc; }
+ul.circle li {display: list-item;  list-style-type: circle; }
+ul.square li {display: list-item;  list-style-type: square;  list-style-position: outside;  }
+ol li{display: list-item;  list-style-type: decimal;  }
+div.mcomment {margin-left: 15px;
+	margin-bottom: 15px;
+	
+}
+
+mcomment p {color: green;
+}
+	comment  {color: maroon;
+}
+a img {
+	border: none;
+}
+ 
+p, note, fig,  ul, ol{
+    display: block;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    margin-left:3em;
+}
+
+
+topic note {
+	background-color : #DCDCDC;
+	border : 1px solid black;
+	clear : both;
+	color : black;
+	margin : 10px 50px 10px 70px;
+	padding : 5px 5px;
+}
+topic note:before {
+    content: "Note: ";
+    font-weight:bold;
+    display:block;
+    margin-left:3em;
+}
+
+topic note[type="caution"]:before {
+    content: " Caution: "; font-weight: bold; margin-left:3em;
+}
+
+topic note[type="note"]:before {
+    content: " Note: "; font-weight: bold; margin-left:3em;
+}
+
+topic note[type="tip"]:before {
+    content: " Tip: "; font-weight: bold; margin-left:3em;
+}
+
+/*
+  Lists
+ */
+ /*
+topic/li"] {
+    margin-left: 20pt;
+    display: list-item;
+    margin-bottom: 2pt;
+    margin-top: 6pt;
+}
+*[class~="topic/ul"],
+*[class~="topic/ol"] {
+    display:block;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+}
+*[class~="topic/ul"] > *[class~="topic/li"] {
+    list-style-type: disc;
+}
+*[class~="topic/ul"] *[class~="topic/ul"] > *[class~="topic/li"] {
+    list-style-type: circle;
+}
+*[class~="topic/ul"] *[class~="topic/ul"] *[class~="topic/ul"] > *[class~="topic/li"] {
+    list-style-type: square;
+}
+*[class~="topic/ul"] *[class~="topic/ul"] *[class~="topic/ul"] *[class~="topic/ul"] > *[class~="topic/li"] {
+    list-style-type: disc;
+}
+*[class~="topic/li"] > *[class~="topic/ol"] {
+    margin-top:0;
+    margin-bottom:0;
+}
+*/
+/*
+  This works on firefox, but it looks odd in
+  the XML editor.
+ */
+*[class~="topic/ol"] {
+    counter-reset:item-count;
+    display:block;
+}
+*[class~="topic/ol"] > *[class~="topic/li"] {
+    display:block;
+}
+*[class~="topic/ol"] > *[class~="topic/li"]:before {
+    content: counters(item-count, ".", decimal) " ";
+    counter-increment: item-count;
+}
+
+/* == phrase markup == */
+topic p q {
+    display:inline;
+}
+
+/*
+  The long quote (<lq>) element indicates content quoted from another source.
+ */
+topic lq:before {
+    color:gray;
+    background-color:inherit;
+    content:open-quote;
+    font-size:larger;
+}
+topic lq:after {
+    color:gray;
+    background-color:inherit;
+    content:close-quote;
+    font-size:larger;
+}
+topic lq {
+   display: block;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    margin-left:5em;
+}
+
+
+topic pre {
+    display:block;
+    white-space: pre;
+    font-family: Monoco, Courier;
+    background-color: #e0e0e0;
+    color:black;
+    border: thin solid gray;
+    padding: 2px;
+     margin-top: 6pt;
+    margin-bottom: 6pt;
+    margin-left:3em;
+}
+
+
+/*
+  ================
+  Figures
+  ================
+  */
+
+topic fig
+ {
+    display:block;
+     margin-left:3em;
+}
+
+topic fig figtitle {display: inline;
+	font-weight: bold;
+} 
+ topic fig desc {display: inline;
+ 	
+ }
+  topic fig desc:before {content: " - ";
+ 	
+ }
+ topic fig image
+ {
+    display: block;
+    content: attr(href, url);
+    width:attr(width, length);
+}
+/*
+  Level 3 Compatible content specification.
+ */
+* image
+ {
+    display: inline;
+    content: attr(href, url);
+    width:attr(width, length);
+}
+
+/*
+  The related information links of a topic
+  (<related-links> element) are stored in a
+  special section following the body of the topic.
+ */
+topic related-links {
+    display: block;
+    margin-left:3em;
+}
+topic related-links:before {
+    display: block;
+    font-weight: bold;
+    content: "Related Links: ";
+    margin:0.5em 0;
+    color:#444444;
+    background-color:inherit;
+	  margin-left:3em;
+}
+topic related-links link
+{
+    display: block;
+    margin-top: 1.33ex;
+    margin-bottom: 1.33ex;
+    	  display: list-item;
+    list-style-type:circle;
+    margin-left: +20pt;
+}
+
+* i {
+	font-style: italic;
+}
+
+/*
+  Use the cross-reference (<xref>) element
+  to link to a different location within
+  the current topic, or a different topic
+  within the same help system, or to
+  external sources, such as Web pages, or
+  to a location in another topic. The href
+  attribute on the <xref> element provides
+  the location of the target.
+ */
+ p xref, li xref, * weblink {
+    text-decoration:underline;
+	  color:navy;
+}
+
+/* Dropdown links */
+
+dropdownlink linktext{
+    display: block;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    margin-left:3em;
+    text-decoration:underline;
+	  color:navy;
+}
+
+dropdownlink dropdowntext {
+    display: block;
+    margin-top: 6pt;
+    margin-bottom: 6pt;
+    margin-left:4em;
+    color: green;
+}
+
+back biblio:before {
+	content: "Bibliography";
+	display: block;
+	font-family: Geneva,Arial,Helvetica,san-serif;
+	font-weight: bold;
+	 font-size: 14pt;
+}
+
+back biblio custmbib {
+	display: block;
+    margin-top: 3pt;
+    margin-bottom: 3pt;
+   
+}
+
+back glossary:before {
+	content: "Glossary";
+	display: block;
+	font-family: Geneva,Arial,Helvetica,san-serif;
+	font-weight: bold;
+	 font-size: 14pt;
+}
+back glossary glossentry {
+	display: block;
+    margin-top: 3pt;
+    margin-bottom: 3pt;
+    margin-left:3em;
+}
+back glossary glossentry glossterm {
+	display: block;font-weight: bold; margin-left:3em;
+}
+
+/*  Table  
+
+
+table {table; font-family: Geneva,Arial,Helvetica,san-serif;
+ font-size: 10pt;
+margin-left: 20pt; margin-right: 15%;}
+tgroup {
+  display:table;
+ }
+
+table tr td p, table tr th p, table tr td {font-family: Geneva,Arial,Helvetica,san-serif;
+ font-size: 10pt;
+margin-top:0pt;margin-bottom:2pt;
+margin-left: 0;
+
+}
+ table tr td ul,  table tr td ol {font-family: Geneva,Arial,Helvetica,san-serif;
+ font-size: 10pt;
+margin-top:1pt;margin-bottom:2pt;
+margin-left: 20px;
+
+}
+table tr {
+	display:  table-row;
+}
+td {display: table-cell;
+	font-family: Arial, sans-serif;
+ font-size: 10pt.; 
+ color: Black;
+}
+*/

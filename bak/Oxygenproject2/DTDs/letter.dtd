@@ -1,0 +1,68 @@
+<!-- Parameter Entities - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ENTITY % lists "ol | ul">
+<!ENTITY % marking.text "(#PCDATA| mcomment )*">
+<!ENTITY % phrases "(#PCDATA| b |i | weblink | mcomment)*">
+
+<!-- Top Level Structure - - - - - - - - - - - - - - - - - - - - - - - -  -->
+
+<!ELEMENT LETTER (HEADING, SALUTATN?, SUBJECT?, body, foot)>
+<!ATTLIST LETTER
+	id ID #IMPLIED
+>
+
+<!-- Salutation - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT SALUTATN (#PCDATA | mcomment)*>
+<!-- Body - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT body (p | %lists; )*>
+<!-- Heading  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT HEADING (SENDER, DATE, RECIPNT)>
+<!ELEMENT SENDER (ADDRESS, PHONE*, FAX?, EMAIL?)>
+<!ELEMENT DATE (#PCDATA | mcomment)*>
+<!ELEMENT SUBJECT (#PCDATA | b |i | mcomment)*>
+<!-- Recipient - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT RECIPNT (NAME, POSITION?, COMPANY?, ADDRESS)>
+<!ELEMENT NAME %marking.text;>
+<!ELEMENT POSITION %marking.text;>
+<!ELEMENT COMPANY %marking.text;>
+<!-- Address - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT ADDRESS (ADDRLINE+, CITY, STATE, CODE, COUNTRY? )>
+<!ELEMENT ADDRLINE %marking.text;>
+<!ELEMENT CITY %marking.text;>
+<!ELEMENT STATE %marking.text;>
+<!ELEMENT COUNTRY %marking.text;>
+<!ELEMENT CODE %marking.text;>
+<!-- Phone/Fax/Email - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT PHONE %marking.text;>
+<!ELEMENT FAX %marking.text;>
+<!ELEMENT EMAIL %marking.text;>
+<!-- Foot - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT foot (CLOSURE, NAME, POSITION?, COMPANY?)>
+<!ELEMENT CLOSURE %marking.text;>
+<!-- Paragraphs - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT p %phrases;>
+
+<!-- External Hypertext Links - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT weblink (#PCDATA)>
+<!ATTLIST weblink
+	href CDATA #REQUIRED
+>
+
+<!-- Numbered List - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT ol (li+)>
+<!ELEMENT li (#PCDATA | b | i  | weblink | p | ol | ul | mcomment)*>
+<!ATTLIST li id ID #IMPLIED>
+
+<!-- Unnumbered List - - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT ul (li+)>
+<!ATTLIST ul
+	bullet (circle | square | disc) #IMPLIED
+	>
+<!-- Emphasized Phrases - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT b (#PCDATA)>
+<!-- ITALICIZED Phrases - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<!ELEMENT i (#PCDATA)>
+<!-- Marker's Comments - - - - - - - - - - - - - - - - - - - - - - - - -  -->
+<!ELEMENT mcomment (commentp+)>
+<!ELEMENT commentp (#PCDATA)>
+
+<!-- END - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  -->

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aegisub User Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" text = "text/css" href = styles/style.css>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wholepage">
+ <div align="center"><img src="./images/banner.png" width="600" height="100" alt=""/></div>
+ 
+ <script>
+  $(document).ready(function(){
+  $('#main').addClass('selected');
+});
+</script>
+ 
+ <div class="middle">
+	<div id="sidenav"></div>
+	<script>$("#sidenav").load("sidebar.html");</script>
+	
+<div class="main">
+
+<H3>Main Screen</H3>
+<hr>
+<p>Here is the main screen of Aegisub.</p>
+<p><img src="images/mainscreen_1.png" width="500" height="400" alt=""/></p>
+
+<p><img src="images/1.png" width="20" height="20" alt=""/> <strong>Menu Bar</strong> contains all functions and divides functions into nine categories. Users click on a category menu to get the drop-down menu, and then select the desired function from it. <br>
+        Here is how the functions are divided in each category:
+        <OL>
+          <LI value="1">File menu includes functions such as opening, closing, saving, and exporting files. </LI>
+          <LI value="2">Editing menu includes traditional editing functions such as copy and paste. </LI>
+          <LI value="3">Subtitle menu includes functions to manipulate subtitles such as style design, language translation, spelling check, and text editing.</LI>
+          <LI value="4">Timing menu includes time shifting and post-processing. </LI>
+          <LI value="5">Video menu includes functions such as opening video files and related files, as well as key frame operating. </LI>
+          <LI value="6">Audio menu includes functions to open and close an audio file as well as other related operations. </LI>
+          <LI value="7">Automation menu includes advanced batch process functions.</LI>
+          <LI value="8"> View menu lets users control the windows to be displayed or not displayed. </LI>
+          <LI value="9">Help menu leads users to an online manual, user's forum, and other support resources.</LI>
+        </OL></p>
+      <P><img src="images/2.png" width="20" height="20" alt=""/> <strong>Toolbar</strong> contains icons for many frequently used functions. Users can fulfill a frequently conducted task by only one click on the corresponding icon. Using toolbar increases productivity by saving users' time on finding the sub-menu from the main menu.</p>
+
+      <p><img src="images/3.png" width="20" height="20" alt=""/> <strong>Video Area</strong> displays the video to which you need to add subtitles. Users can play and search on the video to check whether subtitles appear on the screen at the right time points. Users can also watch the video to see whether the typesetting of subtitles looks good or not.</p>
+ 
+      <p><img src="images/4.png" width="20" height="20" alt=""/> <strong>Audio Area</strong> displays an audio file in both waveform and spectrum. Users can locate the start and end time points for a selected subtitle sentence. Users can change the amplitude and time range displayed on the screen as well as play the audio by clicking the buttons underneath the waveform.</p> 
+    
+    <TR>
+      <p><img src="images/5.png" width="20" height="20" alt=""/> <strong>Subtitles Editing Area</strong> is where users edit subtitles. Main editing tasks that users can execute include changing time points, designing typesetting, and editing subtitle text.</p>
+
+      <p><img src="images/6.png" width="20" height="20" alt=""/> <strong>Subtitles Grid</strong> is a table for displaying subtitles. Each line of subtitles is displayed in one row with its line number, start time, end time, characters per second (CPS), typesetting style, and text in separate columns. The CPS in red represents that too many characters are displayed in one second, and this subtitle line should be adjusted to a shorter sentence.</p>
+ 
+<p align="right"> <a href="./about.html"><img src="./images/arrowleft.png" width="30" height="20" alt="" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./editingSubtitles.html"><img src="./images/arrowright.png" width="30" height="20" alt="" /></a></p>	
+	
+ </div>
+ </div>
+ <div id="footer"><p>Copyright©2022 Susan All Rights Reserved.</p></div>
+</div>
+</body>
+</html>

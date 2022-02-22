@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aegisub User Manual</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" text = "text/css" href = styles/style.css>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wholepage">
+ <div align="center"><img src="./images/banner.png" width="600" height="100" alt=""/></div>
+ <script>
+  $(document).ready(function(){
+  $('#design').addClass('selected');
+});
+</script>
+ <div class="middle">
+	<div id="sidenav"></div>
+	<script>$("#sidenav").load("sidebar.html");</script>
+	
+<div class="main">
+
+<H3>Designing a Style</H3>
+<hr>
+<p>Style design enhances the readability and aesthetic effects. It is a very important task when adding subtitles to a video. You design a style using the Styles Manager and the Style Editor. You can design the font, size, color, outline, and shadow of subtitles. In the preview area of the Style Editor, you can see the result of your changes. You can also save a style in your storage for later use.</p>
+<p>To design a style:</p>
+<OL>
+  <LI value="1">From the menu, click <strong>Subtitles | Styles Manager...</strong>.</LI>
+  <p><img src="images/new_sub.png" width="430" height="240" alt=""/></p>
+  <!--[CDATA[                       ]]-->
+  <p>The styles manager displays. </p>
+  <LI value="2">Click <strong>New</strong> button under Current script area to create a new style.</LI>
+  <p><img src="images/new_style.png" width="430" height="300" alt=""/>
+  The style editor displays.</p>
+  <LI value="3">Type desired name for your style in the <strong>Style Name</strong> field.</LI>
+  <p><img src="images/satyle_name.png" width="430" height="280" alt=""/></p>
+  <LI value="4">To design the style, do one or more of the following actions:<br>
+    <UL style="list-style-type:disc">
+      <LI value="1">Select font and size of the style.</LI>
+      <LI value="2">Select color for primary, secondary, outline, and shadow of the style.</LI>
+      <LI value="3">Select margin and alignment.</LI>
+      <LI value="4">Select width for outline and shadow.</LI>
+      <LI value="5">Select weather subtitles are opaque.</LI>
+      <LI value="6">Select X scale, Y scale, rotation angle of subtitle text, and space between characters.</LI>
+      <LI value="7">Select character encoding.</LI>
+    </UL>
+  </LI>
+  <p>You can see the result in the preview area when you change the settings.</p>
+  <p><img src="images/style_editor.png" width="430" height="290" alt=""/></p>
+  <LI value="5">Click <strong>Apply</strong> button to apply the changes for subtitles on the video.</LI>
+  <p><img src="images/apply.png" width="430" height="290" alt=""/></p>
+  <LI value="6">Click <strong>OK</strong> button to close the style editor.</LI>
+  <p><img src="images/ok.png" width="430" height="290" alt=""/></p>
+  <LI value="7">Click <strong>&lt;- Copy to storage</strong> button to save the newly designed style to the storage.</LI>
+  <p><img src="images/manager_storage.png" width="430" height="290" alt=""/></p>
+  <LI value="8">Click <strong>Close</strong> button to close the styles manager.</LI>
+  <p><img src="images/manager_close.png" width="430" height="290" alt=""/></p>
+</OL>
+<p align="right"> <a href="./styleEditor.html"><img src="./images/arrowleft.png" width="30" height="20" alt="" /></a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./timingSubtitleToAudio.html"><img src="./images/arrowright.png" width="30" height="20" alt="" /></a></p>
+ </div>
+ </div>
+ <div id="footer"><p>Copyright©2022 Susan All Rights Reserved.</p></div>
+</div>
+</body>
+</html>

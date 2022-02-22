@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RESUME SYSTEM "../DTDs/resume.dtd">
+<?xml-stylesheet type="text/xsl" href="../xslt/student_resume.xsl"?>
+<?xml-stylesheet type="text/css" href="../css/resume-oxygen.css"?>
+<?altova_sps ../DTDs/resume.sps?>
+<RESUME>
+    <PERSDATA>
+        <NAME></NAME>
+        <EMAIL></EMAIL>
+        <ADDRESS>
+            <ADDRLINE></ADDRLINE>
+            <CITY></CITY>
+            <STATE></STATE>
+            <CODE></CODE>
+        </ADDRESS>
+    </PERSDATA>
+    <OBJECTV>
+        <p></p>
+    </OBJECTV>
+    <SKILLS></SKILLS>
+  
+    <WORKEXP>
+        <JOB>
+            <EMPLOYER></EMPLOYER>
+            <LOCATION></LOCATION>
+            <POSITION></POSITION>
+            <DATE></DATE>
+            <ul>
+                <li></li>
+            </ul>
+        </JOB>
+    </WORKEXP>
+    <EDUCATN>
+        <POSTSECD>
+            <INSTNAME></INSTNAME>
+            <LOCATION></LOCATION>
+            <PROGRAM></PROGRAM>
+            <DATE></DATE>
+        </POSTSECD>
+    </EDUCATN>
+</RESUME>
